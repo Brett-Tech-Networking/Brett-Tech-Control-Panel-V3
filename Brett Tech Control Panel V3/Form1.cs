@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System.Drawing.Drawing2D;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.IO;
 
 namespace Brett_Tech_Control_Panel_V3
 {
     public partial class Form1 : MetroFramework.Forms.MetroForm
     {
+        int x = 0;
+        List<Point> cpu_pt = new List<Point>();
+        List<Point> ram_pt = new List<Point>();
         public Form1()
         {
             InitializeComponent();
@@ -28,11 +28,7 @@ namespace Brett_Tech_Control_Panel_V3
             this.Time.Text = DateTime.Now.ToString("hh:mm:ss tt");
         }
 
-        private void VirusScanner_Click(object sender, EventArgs e)
-        {
-            VirusScanner vs = new VirusScanner();   
-                vs.Show();
-                }
+
 
         private void PowerOptions_Tick(object sender, EventArgs e)
         {
@@ -75,6 +71,91 @@ namespace Brett_Tech_Control_Panel_V3
         {
             MessageBox.Show("Looks Like Your Up To Date", "UP TO DATE", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-    }
+
+        private void metroListView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
+
+        private void DriveScanComboBox_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (var Drives in Environment.GetLogicalDrives())
+                {
+                    DriveInfo DriveInf = new DriveInfo(Drives);
+                    if (DriveInf.IsReady == true)
+                    {
+                        DriveCombo.Items.Add(DriveInf.Name);
+                        DriveScanTimer.Stop();
+                    }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Cannot Load Drives", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DriveCombo.Items.Clear();
+                foreach (var Drives in Environment.GetLogicalDrives())
+                {
+                    DriveInfo DriveInf = new DriveInfo(Drives);
+                    if (DriveInf.IsReady == true)
+                    {
+                        DriveCombo.Items.Add(DriveInf.Name);
+                    }
+                }
+            }
+
+            catch
+            {
+                MessageBox.Show("Cannot Refresh", "ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            }
+
+        private void CPUTimer_Tick(object sender, EventArgs e)
+        {
+            x += 2;
+            int cpu_val = (pictureBox1.Height + (int)Math.Round(cpu.NextValue())) / 100;
+            int ram_val = (pictureBox2.Height + (int)Math.Round(ram.NextValue())) / 100;
+
+            cpu_pt.Add(new Point(x, pictureBox1.Height - cpu_val));
+            ram_pt.Add(new Point(x, pictureBox2.Height - ram_val));
+            pictureBox1.Invalidate();
+            pictureBox2.Invalidate();
+
+        }
+
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            if (x > pictureBox1.Width || x > pictureBox2.Width)
+            {
+                x = 0;
+                cpu_pt.Clear();
+                ram_pt.Clear();
+            }
+            g.FillRectangle(new HatchBrush(HatchStyle.Cross, Color.Green), pictureBox1.ClientRectangle);
+            if (cpu_pt.Count > 1)
+            g.DrawLines(new Pen(new SolidBrush(Color.FromArgb(255, 0, 255, 100))), cpu_pt.ToArray());
+        }
+
+        private void pictureBox2_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            g.FillRectangle(new HatchBrush(HatchStyle.Cross, Color.Green), pictureBox1.ClientRectangle);
+            if (ram_pt.Count > 1)
+            g.DrawLines(new Pen(new SolidBrush(Color.FromArgb(255, 0, 255, 100))), ram_pt.ToArray());
+
+        }
+    }
+    }
+
+    
+       
  

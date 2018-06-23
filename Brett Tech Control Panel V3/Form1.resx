@@ -123,4 +123,27 @@
   <metadata name="PowerOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>111, 17</value>
   </metadata>
+  <data name="aboiutinfo.Text" xml:space="preserve">
+    <value>Brett Tech Networking
+Brett Tech Control Panel V3
+
+Developer: Brett Hudson
+Email: Support@Brett-TechRepair.Com
+GitHub: https://github.com/Brett-Tech-Networking
+
+This Version of the control panel will have all my features in one including 
+a mini Virus scanner, a CPU/RAM detector, A Task Manager &amp; More</value>
+  </data>
+  <metadata name="DriveScanTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>264, 17</value>
+  </metadata>
+  <metadata name="cpu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>426, 17</value>
+  </metadata>
+  <metadata name="ram.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>633, 17</value>
+  </metadata>
+  <metadata name="cpuRamTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>716, 17</value>
+  </metadata>
 </root>
