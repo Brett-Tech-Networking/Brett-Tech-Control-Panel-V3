@@ -41,12 +41,10 @@ namespace Brett_Tech_Control_Panel_V3
                 if (PowerComboBox.SelectedItem == "Shutdown")
                 {
                     Process.Start("Shutdown", "-s -t 30");
-                    MessageBox.Show("Thank You For Using Brett Tech Control Panel, Your Computer Will Shutdown In 30 Sec.", "Shutdown Started", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 if (PowerComboBox.SelectedItem == "Shutdown (abort)")
                 {
                     Process.Start("Shutdown", "-a");
-                    MessageBox.Show("Shutdown Has Been Aborted", "Shutdown Aborted", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 }
                 if (PowerComboBox.SelectedItem == "Hibernate")
@@ -56,12 +54,10 @@ namespace Brett_Tech_Control_Panel_V3
                 if (PowerComboBox.SelectedItem == "Restart")
                 {
                     Process.Start("Shutdown", "-r -t 30");
-                    MessageBox.Show("Your Computer Will Restart In 30 Sec.", "Restart Started", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 if (PowerComboBox.SelectedItem == "Logout")
                 {
                     Process.Start("Shutdown", "-l -t 30");
-                    MessageBox.Show("You Will Be Logged Out In 30 Sec", "Logout Started", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch
