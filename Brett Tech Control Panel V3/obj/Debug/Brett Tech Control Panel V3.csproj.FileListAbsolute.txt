@@ -1,0 +1,16 @@
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\bin\Debug\Brett Tech Control Panel V3.exe.config
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\bin\Debug\Brett Tech Control Panel V3.exe
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\bin\Debug\Brett Tech Control Panel V3.pdb
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\bin\Debug\MetroFramework.Design.dll
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\bin\Debug\MetroFramework.dll
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\obj\Debug\Brett Tech Control Panel V3.csprojAssemblyReference.cache
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\obj\Debug\Brett_Tech_Control_Panel_V3.Form1.resources
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\obj\Debug\Brett_Tech_Control_Panel_V3.Properties.Resources.resources
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\obj\Debug\Brett Tech Control Panel V3.csproj.GenerateResource.cache
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\obj\Debug\Brett Tech Control Panel V3.csproj.CoreCompileInputs.cache
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\obj\Debug\Brett Tech Control Panel V3.csproj.CopyComplete
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\obj\Debug\Brett Tech Control Panel V3.exe
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\obj\Debug\Brett Tech Control Panel V3.pdb
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\bin\Debug\Fader Theme.dll
+C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control Panel V3\obj\Debug\Brett_Tech_Control_Panel_V3.VirusScanner.resources
