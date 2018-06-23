@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Brett_Tech_Control_Panel_V3
 {
@@ -32,6 +33,52 @@ namespace Brett_Tech_Control_Panel_V3
             VirusScanner vs = new VirusScanner();   
                 vs.Show();
                 }
+
+        private void PowerOptions_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                if (PowerComboBox.SelectedItem == "Shutdown")
+                {
+                    Process.Start("Shutdown", "-s -t 30");
+                    MessageBox.Show("Thank You For Using Brett Tech Control Panel, Your Computer Will Shutdown In 30 Sec.", "Shutdown Started", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                if (PowerComboBox.SelectedItem == "Shutdown (abort)")
+                {
+                    Process.Start("Shutdown", "-a");
+                    MessageBox.Show("Shutdown Has Been Aborted", "Shutdown Aborted", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                }
+                if (PowerComboBox.SelectedItem == "Hibernate")
+                {
+                    Process.Start("Shutdown", "-h");
+                }
+                if (PowerComboBox.SelectedItem == "Restart")
+                {
+                    Process.Start("Shutdown", "-r -t 30");
+                    MessageBox.Show("Your Computer Will Restart In 30 Sec.", "Restart Started", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                if (PowerComboBox.SelectedItem == "Logout")
+                {
+                    Process.Start("Shutdown", "-l -t 30");
+                    MessageBox.Show("You Will Be Logged Out In 30 Sec", "Logout Started", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
+            catch
+            {
+                MessageBox.Show("oops, seems we cant run that option right now please contact support if issue continues", "oops", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void About_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdateChecker_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Looks Like Your Up To Date", "UP TO DATE", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+    }
         }
  
