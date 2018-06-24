@@ -70,7 +70,8 @@ namespace Brett_Tech_Control_Panel_V3
             var ssid = line.Split(new[] { ":" }, StringSplitOptions.RemoveEmptyEntries)[1].TrimStart();
             SSID.Text = "Current WIFI SSID: " + (ssid);
 
-            // Adjust Form Opacity
+            // Print Username
+            Username.Text = "Username:   " + (System.Environment.UserName);
             
         }
 
