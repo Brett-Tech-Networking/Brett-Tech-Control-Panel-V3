@@ -102,5 +102,14 @@
   <ItemGroup>
     <None Include="Resources\task manager.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\152912910314729918 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\152912910314729918.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

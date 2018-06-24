@@ -70,7 +70,8 @@ namespace Brett_Tech_Control_Panel_V3
             var ssid = line.Split(new[] { ":" }, StringSplitOptions.RemoveEmptyEntries)[1].TrimStart();
             SSID.Text = "Current WIFI SSID: " + (ssid);
 
-            // get battery percentage
+            // Adjust Form Opacity
+            
         }
 
         private void Clock_Tick(object sender, EventArgs e)
@@ -350,6 +351,22 @@ namespace Brett_Tech_Control_Panel_V3
         private void Main_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Opacity_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Windows.Forms.Form.ActiveForm.Opacity = ((double)(metroTrackBar1.Value) / 100.0);
+            }
+            catch
+            {
+                //
+            }
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
         }
     }
 }
