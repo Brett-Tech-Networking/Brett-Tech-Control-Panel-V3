@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.ComponentModel;
+using System.Runtime.InteropServices;
 
 namespace Brett_Tech_Control_Panel_V3
 {
@@ -46,24 +47,34 @@ namespace Brett_Tech_Control_Panel_V3
         {
             try
             {
+#pragma warning disable CS0252 
                 if (PowerComboBox.SelectedItem == "Shutdown")
+#pragma warning restore CS0252 
                 {
                     Process.Start("Shutdown", "-s -t 30");
                 }
+#pragma warning disable CS0252 
                 if (PowerComboBox.SelectedItem == "Shutdown (abort)")
+#pragma warning restore CS0252 
                 {
                     Process.Start("Shutdown", "-a");
 
                 }
+#pragma warning disable CS0252 
                 if (PowerComboBox.SelectedItem == "Hibernate")
+#pragma warning restore CS0252 
                 {
                     Process.Start("Shutdown", "-h");
                 }
+#pragma warning disable CS0252 
                 if (PowerComboBox.SelectedItem == "Restart")
+#pragma warning restore CS0252 
                 {
                     Process.Start("Shutdown", "-r -t 30");
                 }
+#pragma warning disable CS0252 
                 if (PowerComboBox.SelectedItem == "Logout")
+#pragma warning restore CS0252 
                 {
                     Process.Start("Shutdown", "-l -t 30");
                 }
@@ -81,7 +92,8 @@ namespace Brett_Tech_Control_Panel_V3
 
         private void UpdateChecker_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Looks Like Your Up To Date", "UP TO DATE", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            notifyIcon1.ShowBalloonTip(100, "Brett Tech Networking", "Looks Like You Have The Latest Version, Great!", ToolTipIcon.Info);
+
         }
 
         private void metroListView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -171,13 +183,20 @@ namespace Brett_Tech_Control_Panel_V3
             if (TopMostTrue.Checked == true)
             {
                 this.TopMost = true;
+                notifyIcon1.ShowBalloonTip(100, "Brett Tech Networking", "Brett Tech Control Panel Will Now Remain On Top Of All Apps", ToolTipIcon.Info);
             }
             else
               if (TopMostFalse.Checked == true)
             {
                 this.TopMost = false;
+                notifyIcon1.ShowBalloonTip(100, "Brett Tech Networking", "Brett Tech Control Panel Will Now Act As Normal", ToolTipIcon.Info);
 
             }
+        }
+
+        private void ShowNotifyIcon(string v1, bool v2, int v3)
+        {
+            throw new NotImplementedException();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -192,12 +211,14 @@ namespace Brett_Tech_Control_Panel_V3
         private void StartTask_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(StartTextBox.Text))
-            { 
+            {
                 try
                 {
                     Process proc = new Process();
                     proc.StartInfo.FileName = StartTextBox.Text;
                     proc.Start();
+                    notifyIcon1.ShowBalloonTip(100, "Brett Tech Networking", (StartTextBox.Text + " Started"), ToolTipIcon.Info);
+
                 }
 
                 catch (Exception ex)
@@ -207,7 +228,7 @@ namespace Brett_Tech_Control_Panel_V3
                 }
             }
         }
-       
+
 
         private void killProcessToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -216,7 +237,7 @@ namespace Brett_Tech_Control_Panel_V3
                 proc[listBox1.SelectedIndex].Kill();
                 GetAllProcess();
             }
-                catch (Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -230,7 +251,7 @@ namespace Brett_Tech_Control_Panel_V3
                 if (p != null)
                     p.Kill();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -243,35 +264,35 @@ namespace Brett_Tech_Control_Panel_V3
 
         private void RefreshProcesses_Click(object sender, EventArgs e)
         {
-            
+
             GetAllProcess();
         }
 
         private void SetTimeColor_Click(object sender, EventArgs e)
         {
-            
+
             if (TimeRed.Checked == true)
             {
                 Time.ForeColor = Color.Red;
             }
-            
-             if (TimeBlue.Checked == true)
+
+            if (TimeBlue.Checked == true)
             {
                 Time.ForeColor = Color.Blue;
             }
-             if (TimeOrange.Checked == true)
+            if (TimeOrange.Checked == true)
             {
                 Time.ForeColor = Color.Orange;
             }
-             if(TimeLime.Checked == true)
+            if (TimeLime.Checked == true)
             {
                 Time.ForeColor = Color.Lime;
             }
-             if (TimeBrown.Checked == true)
+            if (TimeBrown.Checked == true)
             {
                 Time.ForeColor = Color.Brown;
             }
-             if(TimePink.Checked == true)
+            if (TimePink.Checked == true)
             {
                 Time.ForeColor = Color.Pink;
             }
@@ -281,9 +302,12 @@ namespace Brett_Tech_Control_Panel_V3
         {
 
         }
-    }
-    }
 
     
-       
- 
+
+        private void metroTrackBar1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

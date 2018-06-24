@@ -40,13 +40,18 @@
             this.CPURAM = new MetroFramework.Controls.MetroTabPage();
             this.MemoryLabel = new System.Windows.Forms.Label();
             this.CPULabel = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.VirusScanner = new MetroFramework.Controls.MetroTabPage();
+            this.refreshdrives = new System.Windows.Forms.PictureBox();
             this.metroListView2 = new MetroFramework.Controls.MetroListView();
             this.metroListView1 = new MetroFramework.Controls.MetroListView();
             this.ScanButton = new MetroFramework.Controls.MetroButton();
             this.DriveCombo = new MetroFramework.Controls.MetroComboBox();
             this.metroProgressBar1 = new MetroFramework.Controls.MetroProgressBar();
             this.TaskManager = new MetroFramework.Controls.MetroTabPage();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.RefreshProcesses = new MetroFramework.Controls.MetroButton();
             this.KillProcess = new MetroFramework.Controls.MetroButton();
             this.StartTask = new MetroFramework.Controls.MetroButton();
             this.StartTextBox = new MetroFramework.Controls.MetroTextBox();
@@ -57,6 +62,8 @@
             this.UpdateChecker = new MetroFramework.Controls.MetroButton();
             this.aboiutinfo = new MetroFramework.Controls.MetroLabel();
             this.Settings = new MetroFramework.Controls.MetroTabPage();
+            this.MouseSensitivity = new MetroFramework.Controls.MetroPanel();
+            this.MouseSpeedLabel = new MetroFramework.Controls.MetroLabel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
             this.TimePink = new MetroFramework.Controls.MetroRadioButton();
             this.TimeBrown = new MetroFramework.Controls.MetroRadioButton();
@@ -75,27 +82,24 @@
             this.cpu = new System.Diagnostics.PerformanceCounter();
             this.ram = new System.Diagnostics.PerformanceCounter();
             this.Timer1 = new System.Windows.Forms.Timer(this.components);
-            this.RefreshProcesses = new MetroFramework.Controls.MetroButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.refreshdrives = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.TabControl1.SuspendLayout();
             this.Main.SuspendLayout();
             this.CPURAM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.VirusScanner.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.refreshdrives)).BeginInit();
             this.TaskManager.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.TaskManRighClick.SuspendLayout();
             this.About.SuspendLayout();
             this.Settings.SuspendLayout();
+            this.MouseSensitivity.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cpu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ram)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.refreshdrives)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // Time
@@ -177,8 +181,10 @@
             this.TabControl1.Name = "TabControl1";
             this.TabControl1.SelectedIndex = 5;
             this.TabControl1.Size = new System.Drawing.Size(1062, 564);
+            this.TabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.TabControl1.Style = MetroFramework.MetroColorStyle.Yellow;
             this.TabControl1.TabIndex = 4;
+            this.TabControl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TabControl1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.TabControl1.UseSelectable = true;
             // 
@@ -240,6 +246,29 @@
             this.CPULabel.TabIndex = 4;
             this.CPULabel.Text = "CPU Usage";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.Location = new System.Drawing.Point(16, 302);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1035, 193);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox2_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Location = new System.Drawing.Point(16, 56);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1035, 193);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
+            // 
             // VirusScanner
             // 
             this.VirusScanner.Controls.Add(this.refreshdrives);
@@ -261,6 +290,21 @@
             this.VirusScanner.VerticalScrollbarBarColor = true;
             this.VirusScanner.VerticalScrollbarHighlightOnWheel = false;
             this.VirusScanner.VerticalScrollbarSize = 10;
+            // 
+            // refreshdrives
+            // 
+            this.refreshdrives.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.refreshdrives.BackColor = System.Drawing.Color.Transparent;
+            this.refreshdrives.BackgroundImage = global::Brett_Tech_Control_Panel_V3.Properties.Resources.refresh1;
+            this.refreshdrives.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.refreshdrives.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.refreshdrives.Location = new System.Drawing.Point(867, 425);
+            this.refreshdrives.Name = "refreshdrives";
+            this.refreshdrives.Size = new System.Drawing.Size(35, 28);
+            this.refreshdrives.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.refreshdrives.TabIndex = 6;
+            this.refreshdrives.TabStop = false;
+            this.refreshdrives.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // metroListView2
             // 
@@ -365,6 +409,33 @@
             this.TaskManager.VerticalScrollbarSize = 10;
             this.TaskManager.Click += new System.EventHandler(this.TaskManager_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.task_manager;
+            this.pictureBox3.Location = new System.Drawing.Point(777, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(109, 77);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
+            // RefreshProcesses
+            // 
+            this.RefreshProcesses.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.RefreshProcesses.DisplayFocus = true;
+            this.RefreshProcesses.Highlight = true;
+            this.RefreshProcesses.Location = new System.Drawing.Point(892, 3);
+            this.RefreshProcesses.Name = "RefreshProcesses";
+            this.RefreshProcesses.Size = new System.Drawing.Size(159, 30);
+            this.RefreshProcesses.Style = MetroFramework.MetroColorStyle.Red;
+            this.RefreshProcesses.TabIndex = 7;
+            this.RefreshProcesses.Text = "Refresh Process List";
+            this.RefreshProcesses.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.RefreshProcesses.UseSelectable = true;
+            this.RefreshProcesses.UseStyleColors = true;
+            this.RefreshProcesses.Click += new System.EventHandler(this.RefreshProcesses_Click);
+            // 
             // KillProcess
             // 
             this.KillProcess.DisplayFocus = true;
@@ -389,7 +460,7 @@
             this.StartTask.Highlight = true;
             this.StartTask.Location = new System.Drawing.Point(854, 481);
             this.StartTask.Name = "StartTask";
-            this.StartTask.Size = new System.Drawing.Size(82, 35);
+            this.StartTask.Size = new System.Drawing.Size(82, 30);
             this.StartTask.Style = MetroFramework.MetroColorStyle.Yellow;
             this.StartTask.TabIndex = 4;
             this.StartTask.Text = "Start";
@@ -513,6 +584,7 @@
             // 
             // Settings
             // 
+            this.Settings.Controls.Add(this.MouseSensitivity);
             this.Settings.Controls.Add(this.metroPanel2);
             this.Settings.Controls.Add(this.metroPanel1);
             this.Settings.ForeColor = System.Drawing.Color.Red;
@@ -531,6 +603,37 @@
             this.Settings.VerticalScrollbarSize = 10;
             this.Settings.Click += new System.EventHandler(this.Settings_Click);
             // 
+            // MouseSensitivity
+            // 
+            this.MouseSensitivity.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.MouseSensitivity.Controls.Add(this.MouseSpeedLabel);
+            this.MouseSensitivity.HorizontalScrollbarBarColor = true;
+            this.MouseSensitivity.HorizontalScrollbarHighlightOnWheel = false;
+            this.MouseSensitivity.HorizontalScrollbarSize = 10;
+            this.MouseSensitivity.Location = new System.Drawing.Point(499, 16);
+            this.MouseSensitivity.Name = "MouseSensitivity";
+            this.MouseSensitivity.Size = new System.Drawing.Size(392, 169);
+            this.MouseSensitivity.Style = MetroFramework.MetroColorStyle.Red;
+            this.MouseSensitivity.TabIndex = 10;
+            this.MouseSensitivity.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.MouseSensitivity.UseStyleColors = true;
+            this.MouseSensitivity.VerticalScrollbarBarColor = true;
+            this.MouseSensitivity.VerticalScrollbarHighlightOnWheel = false;
+            this.MouseSensitivity.VerticalScrollbarSize = 10;
+            // 
+            // MouseSpeedLabel
+            // 
+            this.MouseSpeedLabel.AutoSize = true;
+            this.MouseSpeedLabel.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.MouseSpeedLabel.Location = new System.Drawing.Point(16, 10);
+            this.MouseSpeedLabel.Name = "MouseSpeedLabel";
+            this.MouseSpeedLabel.Size = new System.Drawing.Size(102, 20);
+            this.MouseSpeedLabel.Style = MetroFramework.MetroColorStyle.Blue;
+            this.MouseSpeedLabel.TabIndex = 6;
+            this.MouseSpeedLabel.Text = "Mouse Speed";
+            this.MouseSpeedLabel.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.MouseSpeedLabel.UseStyleColors = true;
+            // 
             // metroPanel2
             // 
             this.metroPanel2.BackColor = System.Drawing.Color.Black;
@@ -546,7 +649,7 @@
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(298, 16);
+            this.metroPanel2.Location = new System.Drawing.Point(265, 16);
             this.metroPanel2.Name = "metroPanel2";
             this.metroPanel2.Size = new System.Drawing.Size(212, 169);
             this.metroPanel2.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -689,7 +792,7 @@
             this.metroPanel1.HorizontalScrollbarSize = 10;
             this.metroPanel1.Location = new System.Drawing.Point(16, 16);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(265, 169);
+            this.metroPanel1.Size = new System.Drawing.Size(226, 169);
             this.metroPanel1.Style = MetroFramework.MetroColorStyle.Yellow;
             this.metroPanel1.TabIndex = 7;
             this.metroPanel1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -714,7 +817,7 @@
             // 
             this.TopMostFalse.AutoSize = true;
             this.TopMostFalse.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.TopMostFalse.Location = new System.Drawing.Point(135, 47);
+            this.TopMostFalse.Location = new System.Drawing.Point(106, 47);
             this.TopMostFalse.Name = "TopMostFalse";
             this.TopMostFalse.Size = new System.Drawing.Size(84, 20);
             this.TopMostFalse.Style = MetroFramework.MetroColorStyle.Lime;
@@ -728,7 +831,7 @@
             // 
             this.TopMostTrue.AutoSize = true;
             this.TopMostTrue.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.TopMostTrue.Location = new System.Drawing.Point(38, 47);
+            this.TopMostTrue.Location = new System.Drawing.Point(3, 47);
             this.TopMostTrue.Name = "TopMostTrue";
             this.TopMostTrue.Size = new System.Drawing.Size(79, 20);
             this.TopMostTrue.Style = MetroFramework.MetroColorStyle.Lime;
@@ -743,7 +846,7 @@
             this.SetTopMost.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.SetTopMost.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.SetTopMost.Highlight = true;
-            this.SetTopMost.Location = new System.Drawing.Point(58, 119);
+            this.SetTopMost.Location = new System.Drawing.Point(35, 132);
             this.SetTopMost.Name = "SetTopMost";
             this.SetTopMost.Size = new System.Drawing.Size(134, 30);
             this.SetTopMost.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -777,70 +880,12 @@
             this.Timer1.Interval = 500;
             this.Timer1.Tick += new System.EventHandler(this.CPUTimer_Tick);
             // 
-            // RefreshProcesses
+            // notifyIcon1
             // 
-            this.RefreshProcesses.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.RefreshProcesses.DisplayFocus = true;
-            this.RefreshProcesses.Highlight = true;
-            this.RefreshProcesses.Location = new System.Drawing.Point(892, 3);
-            this.RefreshProcesses.Name = "RefreshProcesses";
-            this.RefreshProcesses.Size = new System.Drawing.Size(159, 30);
-            this.RefreshProcesses.Style = MetroFramework.MetroColorStyle.Red;
-            this.RefreshProcesses.TabIndex = 7;
-            this.RefreshProcesses.Text = "Refresh Process List";
-            this.RefreshProcesses.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.RefreshProcesses.UseSelectable = true;
-            this.RefreshProcesses.UseStyleColors = true;
-            this.RefreshProcesses.Click += new System.EventHandler(this.RefreshProcesses_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 302);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1035, 193);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox2_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 56);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1035, 193);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
-            // 
-            // refreshdrives
-            // 
-            this.refreshdrives.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.refreshdrives.BackColor = System.Drawing.Color.Transparent;
-            this.refreshdrives.BackgroundImage = global::Brett_Tech_Control_Panel_V3.Properties.Resources.refresh1;
-            this.refreshdrives.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.refreshdrives.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.refreshdrives.Location = new System.Drawing.Point(867, 425);
-            this.refreshdrives.Name = "refreshdrives";
-            this.refreshdrives.Size = new System.Drawing.Size(35, 28);
-            this.refreshdrives.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.refreshdrives.TabIndex = 6;
-            this.refreshdrives.TabStop = false;
-            this.refreshdrives.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.task_manager;
-            this.pictureBox3.Location = new System.Drawing.Point(777, 16);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(109, 77);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
+            this.notifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
             // 
             // Form1
             // 
@@ -860,22 +905,24 @@
             this.Main.PerformLayout();
             this.CPURAM.ResumeLayout(false);
             this.CPURAM.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.VirusScanner.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.refreshdrives)).EndInit();
             this.TaskManager.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.TaskManRighClick.ResumeLayout(false);
             this.About.ResumeLayout(false);
             this.About.PerformLayout();
             this.Settings.ResumeLayout(false);
+            this.MouseSensitivity.ResumeLayout(false);
+            this.MouseSensitivity.PerformLayout();
             this.metroPanel2.ResumeLayout(false);
             this.metroPanel2.PerformLayout();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cpu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ram)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.refreshdrives)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -932,6 +979,9 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private MetroFramework.Controls.MetroButton RefreshProcesses;
         public MetroFramework.Controls.MetroLabel Time;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private MetroFramework.Controls.MetroPanel MouseSensitivity;
+        private MetroFramework.Controls.MetroLabel MouseSpeedLabel;
     }
 }
 
