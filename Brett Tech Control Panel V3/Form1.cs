@@ -369,5 +369,142 @@ namespace Brett_Tech_Control_Panel_V3
         private void metroButton1_Click(object sender, EventArgs e)
         {
         }
+
+        private void richTextBox1_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text == "Enter Text Here")
+            {
+                richTextBox1.Clear();
+            }
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                richTextBox1.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);
+            }
+            catch
+            {
+                saveFileDialog1.DefaultExt = ".txt";
+                saveFileDialog1.OverwritePrompt = true;
+                saveFileDialog1.Title = "Save File";
+                saveFileDialog1.Filter = "Text Files (*.txt) | *.txt";
+
+                if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    richTextBox1.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);
+                }
+               
+            }
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to save the current file?", "Whoa There!",
+           MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+
+            //no
+            if (result == DialogResult.No)
+            {
+                richTextBox1.Clear();
+            }
+
+            //yes
+            if (result == DialogResult.Yes)
+            {
+                saveFileDialog1.DefaultExt = ".txt";
+                saveFileDialog1.OverwritePrompt = true;
+                saveFileDialog1.Title = "Save File";
+                saveFileDialog1.Filter = "Text Files (*.txt) | *.txt";
+
+                if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    richTextBox1.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);
+                }
+            }
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.Modified == false)
+            {
+                // filters
+                openFileDialog1.Title = "Open File";
+                openFileDialog1.Filter = "Text Files (*.txt) | *.txt |All files (*.*)|*.*";
+                openFileDialog1.FileName = "";
+                openFileDialog1.FilterIndex = 3;
+                openFileDialog1.InitialDirectory = "My Documents";
+
+
+                openFileDialog1.CheckFileExists = true;
+                openFileDialog1.CheckPathExists = true;
+
+                if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    richTextBox1.LoadFile(openFileDialog1.FileName);
+                }
+            }
+
+            //open if modified
+            else if (richTextBox1.Modified == true)
+            {
+                DialogResult result = MessageBox.Show("Do you want to save the current file?", "Whoa There!",
+                MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+
+                //cancel
+                if (result == DialogResult.Cancel)
+                {
+                    return;
+                }
+
+                //yes
+                if (result == DialogResult.Yes)
+                {
+                    saveFileDialog1.DefaultExt = ".txt";
+                    saveFileDialog1.OverwritePrompt = true;
+                    saveFileDialog1.Title = "Save File";
+                    saveFileDialog1.Filter = "Text Files (*.txt) | *.txt";
+
+                    if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    {
+                        richTextBox1.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);
+                    }
+                }
+
+                //no
+                richTextBox1.Clear();
+                {
+                    openFileDialog1.Title = "Open File";
+                    openFileDialog1.Filter = "Text Files (*.txt) | *.txt";
+                    openFileDialog1.FileName = "";
+                    openFileDialog1.FilterIndex = 0;
+
+                    openFileDialog1.InitialDirectory = "My Documents";
+
+                    openFileDialog1.CheckFileExists = true;
+                    openFileDialog1.CheckPathExists = true;
+
+                    if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    {
+                        richTextBox1.LoadFile(openFileDialog1.FileName);
+                    }
+                }
+            }
+        }
+
+        private void richTextBox1_Click_1(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text == "Enter Text Here")
+            {
+                richTextBox1.Clear();
+            }
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            Notepad note = new Notepad();
+            note.Show();
+        }
     }
 }

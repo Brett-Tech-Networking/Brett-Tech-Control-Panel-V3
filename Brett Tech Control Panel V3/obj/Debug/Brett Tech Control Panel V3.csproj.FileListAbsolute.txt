@@ -29,3 +29,4 @@ C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Cont
 C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\obj\Debug\Brett Tech Control Panel V3.csproj.CopyComplete
 C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\obj\Debug\Brett Tech Control Panel V3.exe
 C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\obj\Debug\Brett Tech Control Panel V3.pdb
+C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\obj\Debug\Brett_Tech_Control_Panel_V3.Notepad.resources
