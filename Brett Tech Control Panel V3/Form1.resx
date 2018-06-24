@@ -135,7 +135,13 @@ Email: Support@Brett-TechRepair.Com
 GitHub: https://github.com/Brett-Tech-Networking
 
 This Version of the control panel will have all my features in one including 
-a mini Virus scanner, a CPU/RAM detector, A Task Manager &amp; More</value>
+a mini Virus scanner, a CPU/RAM detector, A Task Manager &amp; More.
+
+On our main screen you may have noticed a YOUR IP: well please note we do not 
+log nor track IP'S this is for your use only, Also if it is not in the format of an IP 10.0.0.1
+Then It may be listing your IPV6 Address witch is a more secure way so hackers are less likely to 
+gain access to you real IP Address
+</value>
   </data>
   <metadata name="DriveScanTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>264, 17</value>

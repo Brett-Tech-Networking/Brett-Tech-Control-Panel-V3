@@ -83,6 +83,11 @@
             this.ram = new System.Diagnostics.PerformanceCounter();
             this.Timer1 = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.YourIP = new MetroFramework.Controls.MetroLabel();
+            this.PCName = new MetroFramework.Controls.MetroLabel();
+            this.SSID = new MetroFramework.Controls.MetroLabel();
+            this.sysInfo = new MetroFramework.Controls.MetroLabel();
+            this.SystemInfoPanel = new MetroFramework.Controls.MetroPanel();
             this.TabControl1.SuspendLayout();
             this.Main.SuspendLayout();
             this.CPURAM.SuspendLayout();
@@ -100,6 +105,7 @@
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cpu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ram)).BeginInit();
+            this.SystemInfoPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Time
@@ -135,7 +141,7 @@
             "Hibernate",
             "Restart",
             "Logout"});
-            this.PowerComboBox.Location = new System.Drawing.Point(252, 479);
+            this.PowerComboBox.Location = new System.Drawing.Point(252, 474);
             this.PowerComboBox.Name = "PowerComboBox";
             this.PowerComboBox.PromptText = "Please Make A Selection";
             this.PowerComboBox.Size = new System.Drawing.Size(526, 30);
@@ -179,7 +185,7 @@
             this.TabControl1.Controls.Add(this.Settings);
             this.TabControl1.Location = new System.Drawing.Point(3, 63);
             this.TabControl1.Name = "TabControl1";
-            this.TabControl1.SelectedIndex = 5;
+            this.TabControl1.SelectedIndex = 0;
             this.TabControl1.Size = new System.Drawing.Size(1062, 564);
             this.TabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.TabControl1.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -190,6 +196,7 @@
             // 
             // Main
             // 
+            this.Main.Controls.Add(this.SystemInfoPanel);
             this.Main.Controls.Add(this.ShutdownOptionsLabel);
             this.Main.Controls.Add(this.PowerComboBox);
             this.Main.HorizontalScrollbarBarColor = true;
@@ -198,12 +205,15 @@
             this.Main.Location = new System.Drawing.Point(4, 38);
             this.Main.Name = "Main";
             this.Main.Size = new System.Drawing.Size(1054, 522);
+            this.Main.Style = MetroFramework.MetroColorStyle.Blue;
             this.Main.TabIndex = 0;
             this.Main.Text = "Main";
             this.Main.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.Main.UseStyleColors = true;
             this.Main.VerticalScrollbarBarColor = true;
             this.Main.VerticalScrollbarHighlightOnWheel = false;
             this.Main.VerticalScrollbarSize = 10;
+            this.Main.Click += new System.EventHandler(this.Main_Click);
             // 
             // CPURAM
             // 
@@ -575,7 +585,7 @@
             this.aboiutinfo.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.aboiutinfo.Location = new System.Drawing.Point(0, 10);
             this.aboiutinfo.Name = "aboiutinfo";
-            this.aboiutinfo.Size = new System.Drawing.Size(639, 225);
+            this.aboiutinfo.Size = new System.Drawing.Size(816, 375);
             this.aboiutinfo.Style = MetroFramework.MetroColorStyle.Red;
             this.aboiutinfo.TabIndex = 2;
             this.aboiutinfo.Text = resources.GetString("aboiutinfo.Text");
@@ -803,7 +813,8 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Small;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel1.Location = new System.Drawing.Point(3, 10);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(196, 20);
@@ -887,6 +898,77 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             // 
+            // YourIP
+            // 
+            this.YourIP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.YourIP.AutoSize = true;
+            this.YourIP.Location = new System.Drawing.Point(20, 74);
+            this.YourIP.Name = "YourIP";
+            this.YourIP.Size = new System.Drawing.Size(55, 20);
+            this.YourIP.Style = MetroFramework.MetroColorStyle.Lime;
+            this.YourIP.TabIndex = 4;
+            this.YourIP.Text = "Your IP:";
+            this.YourIP.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.YourIP.UseStyleColors = true;
+            // 
+            // PCName
+            // 
+            this.PCName.AutoSize = true;
+            this.PCName.Location = new System.Drawing.Point(20, 105);
+            this.PCName.Name = "PCName";
+            this.PCName.Size = new System.Drawing.Size(103, 20);
+            this.PCName.Style = MetroFramework.MetroColorStyle.Lime;
+            this.PCName.TabIndex = 4;
+            this.PCName.Text = "Your PC Name:";
+            this.PCName.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.PCName.UseStyleColors = true;
+            // 
+            // SSID
+            // 
+            this.SSID.AutoSize = true;
+            this.SSID.Location = new System.Drawing.Point(20, 45);
+            this.SSID.Name = "SSID";
+            this.SSID.Size = new System.Drawing.Size(132, 20);
+            this.SSID.Style = MetroFramework.MetroColorStyle.Lime;
+            this.SSID.TabIndex = 4;
+            this.SSID.Text = "Current WIFI SSID: ";
+            this.SSID.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.SSID.UseStyleColors = true;
+            // 
+            // sysInfo
+            // 
+            this.sysInfo.AutoSize = true;
+            this.sysInfo.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.sysInfo.Location = new System.Drawing.Point(3, 10);
+            this.sysInfo.Name = "sysInfo";
+            this.sysInfo.Size = new System.Drawing.Size(149, 20);
+            this.sysInfo.Style = MetroFramework.MetroColorStyle.Blue;
+            this.sysInfo.TabIndex = 5;
+            this.sysInfo.Text = "System Information";
+            this.sysInfo.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.sysInfo.UseStyleColors = true;
+            // 
+            // SystemInfoPanel
+            // 
+            this.SystemInfoPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.SystemInfoPanel.Controls.Add(this.sysInfo);
+            this.SystemInfoPanel.Controls.Add(this.SSID);
+            this.SystemInfoPanel.Controls.Add(this.PCName);
+            this.SystemInfoPanel.Controls.Add(this.YourIP);
+            this.SystemInfoPanel.HorizontalScrollbarBarColor = true;
+            this.SystemInfoPanel.HorizontalScrollbarHighlightOnWheel = false;
+            this.SystemInfoPanel.HorizontalScrollbarSize = 10;
+            this.SystemInfoPanel.Location = new System.Drawing.Point(3, 3);
+            this.SystemInfoPanel.Name = "SystemInfoPanel";
+            this.SystemInfoPanel.Size = new System.Drawing.Size(545, 227);
+            this.SystemInfoPanel.Style = MetroFramework.MetroColorStyle.Blue;
+            this.SystemInfoPanel.TabIndex = 6;
+            this.SystemInfoPanel.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.SystemInfoPanel.UseStyleColors = true;
+            this.SystemInfoPanel.VerticalScrollbarBarColor = true;
+            this.SystemInfoPanel.VerticalScrollbarHighlightOnWheel = false;
+            this.SystemInfoPanel.VerticalScrollbarSize = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -923,6 +1005,8 @@
             this.metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cpu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ram)).EndInit();
+            this.SystemInfoPanel.ResumeLayout(false);
+            this.SystemInfoPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -982,6 +1066,11 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private MetroFramework.Controls.MetroPanel MouseSensitivity;
         private MetroFramework.Controls.MetroLabel MouseSpeedLabel;
+        private MetroFramework.Controls.MetroLabel YourIP;
+        private MetroFramework.Controls.MetroLabel PCName;
+        private MetroFramework.Controls.MetroLabel SSID;
+        private MetroFramework.Controls.MetroLabel sysInfo;
+        private MetroFramework.Controls.MetroPanel SystemInfoPanel;
     }
 }
 
