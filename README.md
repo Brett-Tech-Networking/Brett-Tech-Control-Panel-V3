@@ -7,3 +7,5 @@ This control panel unlike my others will have a wide variety of features (listed
 - A Mini Notepad(Includes New, Save, & Open Options)
 - A Custom Settings Tab (This will allow you to change many aspects of the control panel yourself including some system settings)
 - A Handy Time Clock In The Bottom Left Side Of Your Screen
+
+# Please feel free to submit issues & Requests Via Github or Email @ Software@Brett-TechRepair.com
