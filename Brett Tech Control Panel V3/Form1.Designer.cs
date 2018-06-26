@@ -40,13 +40,16 @@
             this.SystemInfoPanel = new MetroFramework.Controls.MetroPanel();
             this.Notice = new MetroFramework.Controls.MetroLabel();
             this.sysInfo = new MetroFramework.Controls.MetroLabel();
-            this.SSID = new MetroFramework.Controls.MetroLabel();
+            this.Username = new MetroFramework.Controls.MetroLabel();
             this.PCName = new MetroFramework.Controls.MetroLabel();
             this.YourIP = new MetroFramework.Controls.MetroLabel();
             this.CPURAM = new MetroFramework.Controls.MetroTabPage();
             this.MemoryLabel = new System.Windows.Forms.Label();
             this.CPULabel = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.VirusScanner = new MetroFramework.Controls.MetroTabPage();
+            this.refreshdrives = new System.Windows.Forms.PictureBox();
             this.metroListView2 = new MetroFramework.Controls.MetroListView();
             this.metroListView1 = new MetroFramework.Controls.MetroListView();
             this.ScanButton = new MetroFramework.Controls.MetroButton();
@@ -57,13 +60,34 @@
             this.KillProcess = new MetroFramework.Controls.MetroButton();
             this.StartTask = new MetroFramework.Controls.MetroButton();
             this.StartTextBox = new MetroFramework.Controls.MetroTextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.TaskManRighClick = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.killProcessToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Notes = new MetroFramework.Controls.MetroTabPage();
+            this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.Newfile = new System.Windows.Forms.ToolStripButton();
+            this.SaveFile = new System.Windows.Forms.ToolStripButton();
+            this.OpenFile = new System.Windows.Forms.ToolStripButton();
+            this.Information = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.VoiceRecorder = new System.Windows.Forms.ToolStripButton();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.SpeedTester = new MetroFramework.Controls.MetroTabPage();
+            this.UploadLabel = new MetroFramework.Controls.MetroLabel();
+            this.DownloadLabel = new MetroFramework.Controls.MetroLabel();
+            this.UploadSpeed = new CircularProgressBar.CircularProgressBar();
+            this.DownloadSpeed = new CircularProgressBar.CircularProgressBar();
+            this.StartSpeedTest = new System.Windows.Forms.PictureBox();
             this.About = new MetroFramework.Controls.MetroTabPage();
             this.aboiutinfo = new MetroFramework.Controls.MetroLabel();
             this.UpdateChecker = new MetroFramework.Controls.MetroButton();
             this.Settings = new MetroFramework.Controls.MetroTabPage();
+            this.metroPanel4 = new MetroFramework.Controls.MetroPanel();
+            this.Resizablelabel = new MetroFramework.Controls.MetroLabel();
+            this.ResizableToggle = new MetroFramework.Controls.MetroToggle();
+            this.ResizableTitle = new MetroFramework.Controls.MetroLabel();
             this.MouseSensitivity = new MetroFramework.Controls.MetroPanel();
             this.metroTrackBar1 = new MetroFramework.Controls.MetroTrackBar();
             this.MouseSpeedLabel = new MetroFramework.Controls.MetroLabel();
@@ -81,48 +105,40 @@
             this.TopMostFalse = new MetroFramework.Controls.MetroRadioButton();
             this.TopMostTrue = new MetroFramework.Controls.MetroRadioButton();
             this.SetTopMost = new MetroFramework.Controls.MetroButton();
+            this.SSID = new MetroFramework.Controls.MetroLabel();
             this.DriveScanTimer = new System.Windows.Forms.Timer(this.components);
             this.cpu = new System.Diagnostics.PerformanceCounter();
             this.ram = new System.Diagnostics.PerformanceCounter();
-            this.Timer1 = new System.Windows.Forms.Timer(this.components);
+            this.memory = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.Opacity = new System.Windows.Forms.Timer(this.components);
-            this.Username = new MetroFramework.Controls.MetroLabel();
-            this.Notes = new MetroFramework.Controls.MetroTabPage();
-            this.metroPanel3 = new MetroFramework.Controls.MetroPanel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.refreshdrives = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.ToolSize = new System.Windows.Forms.Timer(this.components);
             this.TabControl1.SuspendLayout();
             this.Main.SuspendLayout();
             this.SystemInfoPanel.SuspendLayout();
             this.CPURAM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.VirusScanner.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.refreshdrives)).BeginInit();
             this.TaskManager.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.TaskManRighClick.SuspendLayout();
+            this.Notes.SuspendLayout();
+            this.metroPanel3.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
+            this.SpeedTester.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StartSpeedTest)).BeginInit();
             this.About.SuspendLayout();
             this.Settings.SuspendLayout();
+            this.metroPanel4.SuspendLayout();
             this.MouseSensitivity.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cpu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ram)).BeginInit();
-            this.Notes.SuspendLayout();
-            this.metroPanel3.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.refreshdrives)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // Time
@@ -199,11 +215,12 @@
             this.TabControl1.Controls.Add(this.VirusScanner);
             this.TabControl1.Controls.Add(this.TaskManager);
             this.TabControl1.Controls.Add(this.Notes);
+            this.TabControl1.Controls.Add(this.SpeedTester);
             this.TabControl1.Controls.Add(this.About);
             this.TabControl1.Controls.Add(this.Settings);
             this.TabControl1.Location = new System.Drawing.Point(3, 63);
             this.TabControl1.Name = "TabControl1";
-            this.TabControl1.SelectedIndex = 4;
+            this.TabControl1.SelectedIndex = 0;
             this.TabControl1.Size = new System.Drawing.Size(1062, 564);
             this.TabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.TabControl1.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -237,9 +254,8 @@
             // 
             this.SystemInfoPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.SystemInfoPanel.Controls.Add(this.Notice);
-            this.SystemInfoPanel.Controls.Add(this.sysInfo);
             this.SystemInfoPanel.Controls.Add(this.SSID);
-            this.SystemInfoPanel.Controls.Add(this.Username);
+            this.SystemInfoPanel.Controls.Add(this.sysInfo);
             this.SystemInfoPanel.Controls.Add(this.PCName);
             this.SystemInfoPanel.Controls.Add(this.YourIP);
             this.SystemInfoPanel.HorizontalScrollbarBarColor = true;
@@ -284,24 +300,25 @@
             this.sysInfo.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.sysInfo.UseStyleColors = true;
             // 
-            // SSID
+            // Username
             // 
-            this.SSID.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.SSID.AutoSize = true;
-            this.SSID.Location = new System.Drawing.Point(20, 45);
-            this.SSID.Name = "SSID";
-            this.SSID.Size = new System.Drawing.Size(124, 20);
-            this.SSID.Style = MetroFramework.MetroColorStyle.Lime;
-            this.SSID.TabIndex = 4;
-            this.SSID.Text = "Current WIFI SSID: ";
-            this.SSID.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.SSID.UseStyleColors = true;
+            this.Username.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.Username.AutoSize = true;
+            this.Username.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.Username.Location = new System.Drawing.Point(778, 640);
+            this.Username.Name = "Username";
+            this.Username.Size = new System.Drawing.Size(78, 20);
+            this.Username.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.Username.TabIndex = 4;
+            this.Username.Text = "Welcome:";
+            this.Username.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.Username.UseStyleColors = true;
             // 
             // PCName
             // 
             this.PCName.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.PCName.AutoSize = true;
-            this.PCName.Location = new System.Drawing.Point(20, 105);
+            this.PCName.Location = new System.Drawing.Point(20, 110);
             this.PCName.Name = "PCName";
             this.PCName.Size = new System.Drawing.Size(103, 20);
             this.PCName.Style = MetroFramework.MetroColorStyle.Lime;
@@ -314,7 +331,7 @@
             // 
             this.YourIP.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.YourIP.AutoSize = true;
-            this.YourIP.Location = new System.Drawing.Point(20, 74);
+            this.YourIP.Location = new System.Drawing.Point(20, 77);
             this.YourIP.Name = "YourIP";
             this.YourIP.Size = new System.Drawing.Size(55, 20);
             this.YourIP.Style = MetroFramework.MetroColorStyle.Lime;
@@ -365,6 +382,31 @@
             this.CPULabel.TabIndex = 4;
             this.CPULabel.Text = "CPU Usage";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.Location = new System.Drawing.Point(16, 302);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1035, 193);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox2_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Location = new System.Drawing.Point(16, 56);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1035, 193);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
+            // 
             // VirusScanner
             // 
             this.VirusScanner.Controls.Add(this.refreshdrives);
@@ -386,6 +428,21 @@
             this.VirusScanner.VerticalScrollbarBarColor = true;
             this.VirusScanner.VerticalScrollbarHighlightOnWheel = false;
             this.VirusScanner.VerticalScrollbarSize = 10;
+            // 
+            // refreshdrives
+            // 
+            this.refreshdrives.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.refreshdrives.BackColor = System.Drawing.Color.Transparent;
+            this.refreshdrives.BackgroundImage = global::Brett_Tech_Control_Panel_V3.Properties.Resources.refresh1;
+            this.refreshdrives.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.refreshdrives.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.refreshdrives.Location = new System.Drawing.Point(867, 425);
+            this.refreshdrives.Name = "refreshdrives";
+            this.refreshdrives.Size = new System.Drawing.Size(35, 28);
+            this.refreshdrives.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.refreshdrives.TabIndex = 6;
+            this.refreshdrives.TabStop = false;
+            this.refreshdrives.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // metroListView2
             // 
@@ -581,6 +638,18 @@
             this.StartTextBox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.StartTextBox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.task_manager;
+            this.pictureBox3.Location = new System.Drawing.Point(777, 16);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(109, 77);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
             // listBox1
             // 
             this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -588,13 +657,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.BackColor = System.Drawing.Color.Black;
             this.listBox1.ContextMenuStrip = this.TaskManRighClick;
-            this.listBox1.Font = new System.Drawing.Font("Sitka Subheading", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.Font = new System.Drawing.Font("Sitka Subheading", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.ForeColor = System.Drawing.Color.Lime;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 36;
+            this.listBox1.ItemHeight = 24;
             this.listBox1.Location = new System.Drawing.Point(3, 16);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(768, 472);
+            this.listBox1.Size = new System.Drawing.Size(768, 460);
             this.listBox1.Sorted = true;
             this.listBox1.TabIndex = 2;
             // 
@@ -612,6 +681,267 @@
             this.killProcessToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.killProcessToolStripMenuItem.Text = "Kill Process";
             this.killProcessToolStripMenuItem.Click += new System.EventHandler(this.killProcessToolStripMenuItem_Click);
+            // 
+            // Notes
+            // 
+            this.Notes.Controls.Add(this.metroPanel3);
+            this.Notes.HorizontalScrollbarBarColor = true;
+            this.Notes.HorizontalScrollbarHighlightOnWheel = false;
+            this.Notes.HorizontalScrollbarSize = 10;
+            this.Notes.Location = new System.Drawing.Point(4, 38);
+            this.Notes.Name = "Notes";
+            this.Notes.Size = new System.Drawing.Size(1054, 522);
+            this.Notes.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.Notes.TabIndex = 6;
+            this.Notes.Text = "Notes";
+            this.Notes.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.Notes.VerticalScrollbarBarColor = true;
+            this.Notes.VerticalScrollbarHighlightOnWheel = false;
+            this.Notes.VerticalScrollbarSize = 10;
+            // 
+            // metroPanel3
+            // 
+            this.metroPanel3.Controls.Add(this.toolStrip1);
+            this.metroPanel3.Controls.Add(this.richTextBox1);
+            this.metroPanel3.HorizontalScrollbarBarColor = true;
+            this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel3.HorizontalScrollbarSize = 10;
+            this.metroPanel3.Location = new System.Drawing.Point(3, 13);
+            this.metroPanel3.Name = "metroPanel3";
+            this.metroPanel3.Size = new System.Drawing.Size(1043, 506);
+            this.metroPanel3.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.metroPanel3.TabIndex = 2;
+            this.metroPanel3.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroPanel3.VerticalScrollbarBarColor = true;
+            this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel3.VerticalScrollbarSize = 10;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.BackColor = System.Drawing.Color.Black;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Newfile,
+            this.SaveFile,
+            this.OpenFile,
+            this.Information,
+            this.toolStripSeparator1,
+            this.VoiceRecorder});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1043, 27);
+            this.toolStrip1.TabIndex = 3;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // Newfile
+            // 
+            this.Newfile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Newfile.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources._new;
+            this.Newfile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Newfile.Name = "Newfile";
+            this.Newfile.Size = new System.Drawing.Size(24, 24);
+            this.Newfile.Text = "toolStripButton3";
+            this.Newfile.ToolTipText = "New File";
+            this.Newfile.Click += new System.EventHandler(this.toolStripButton3_Click);
+            // 
+            // SaveFile
+            // 
+            this.SaveFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.SaveFile.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.save;
+            this.SaveFile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.SaveFile.Name = "SaveFile";
+            this.SaveFile.Size = new System.Drawing.Size(24, 24);
+            this.SaveFile.Text = "toolStripButton1";
+            this.SaveFile.ToolTipText = "Save File";
+            this.SaveFile.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // OpenFile
+            // 
+            this.OpenFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.OpenFile.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.open;
+            this.OpenFile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.OpenFile.Name = "OpenFile";
+            this.OpenFile.Size = new System.Drawing.Size(24, 24);
+            this.OpenFile.Text = "toolStripButton2";
+            this.OpenFile.ToolTipText = "Open File";
+            this.OpenFile.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
+            // Information
+            // 
+            this.Information.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Information.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.info;
+            this.Information.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Information.Name = "Information";
+            this.Information.Size = new System.Drawing.Size(24, 24);
+            this.Information.Text = "toolStripButton4";
+            this.Information.ToolTipText = "Information";
+            this.Information.Click += new System.EventHandler(this.toolStripButton4_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
+            // 
+            // VoiceRecorder
+            // 
+            this.VoiceRecorder.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.VoiceRecorder.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.RECORDER_PRO;
+            this.VoiceRecorder.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.VoiceRecorder.Name = "VoiceRecorder";
+            this.VoiceRecorder.Size = new System.Drawing.Size(24, 24);
+            this.VoiceRecorder.ToolTipText = "Voice Recorder";
+            this.VoiceRecorder.Click += new System.EventHandler(this.toolStripButton5_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.Black;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.richTextBox1.ForeColor = System.Drawing.Color.Lime;
+            this.richTextBox1.Location = new System.Drawing.Point(3, 41);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(1037, 449);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.Text = "Enter Text Here";
+            this.richTextBox1.Click += new System.EventHandler(this.richTextBox1_Click_1);
+            // 
+            // SpeedTester
+            // 
+            this.SpeedTester.Controls.Add(this.UploadLabel);
+            this.SpeedTester.Controls.Add(this.DownloadLabel);
+            this.SpeedTester.Controls.Add(this.UploadSpeed);
+            this.SpeedTester.Controls.Add(this.DownloadSpeed);
+            this.SpeedTester.Controls.Add(this.StartSpeedTest);
+            this.SpeedTester.HorizontalScrollbarBarColor = true;
+            this.SpeedTester.HorizontalScrollbarHighlightOnWheel = false;
+            this.SpeedTester.HorizontalScrollbarSize = 10;
+            this.SpeedTester.Location = new System.Drawing.Point(4, 38);
+            this.SpeedTester.Name = "SpeedTester";
+            this.SpeedTester.Size = new System.Drawing.Size(1054, 522);
+            this.SpeedTester.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.SpeedTester.TabIndex = 7;
+            this.SpeedTester.Text = "Speed Tester";
+            this.SpeedTester.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.SpeedTester.VerticalScrollbarBarColor = true;
+            this.SpeedTester.VerticalScrollbarHighlightOnWheel = false;
+            this.SpeedTester.VerticalScrollbarSize = 10;
+            // 
+            // UploadLabel
+            // 
+            this.UploadLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.UploadLabel.AutoSize = true;
+            this.UploadLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.UploadLabel.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.UploadLabel.Location = new System.Drawing.Point(665, 355);
+            this.UploadLabel.Name = "UploadLabel";
+            this.UploadLabel.Size = new System.Drawing.Size(137, 25);
+            this.UploadLabel.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.UploadLabel.TabIndex = 3;
+            this.UploadLabel.Text = "Upload Speed";
+            this.UploadLabel.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.UploadLabel.UseStyleColors = true;
+            this.UploadLabel.Click += new System.EventHandler(this.DownloadLabel_Click);
+            // 
+            // DownloadLabel
+            // 
+            this.DownloadLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.DownloadLabel.AutoSize = true;
+            this.DownloadLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.DownloadLabel.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.DownloadLabel.Location = new System.Drawing.Point(243, 355);
+            this.DownloadLabel.Name = "DownloadLabel";
+            this.DownloadLabel.Size = new System.Drawing.Size(164, 25);
+            this.DownloadLabel.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.DownloadLabel.TabIndex = 3;
+            this.DownloadLabel.Text = "Download Speed";
+            this.DownloadLabel.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.DownloadLabel.UseStyleColors = true;
+            this.DownloadLabel.Click += new System.EventHandler(this.DownloadLabel_Click);
+            // 
+            // UploadSpeed
+            // 
+            this.UploadSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.UploadSpeed.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.UploadSpeed.AnimationSpeed = 500;
+            this.UploadSpeed.BackColor = System.Drawing.Color.Transparent;
+            this.UploadSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold);
+            this.UploadSpeed.ForeColor = System.Drawing.Color.Lime;
+            this.UploadSpeed.InnerColor = System.Drawing.Color.Transparent;
+            this.UploadSpeed.InnerMargin = 2;
+            this.UploadSpeed.InnerWidth = -1;
+            this.UploadSpeed.Location = new System.Drawing.Point(570, 20);
+            this.UploadSpeed.MarqueeAnimationSpeed = 2000;
+            this.UploadSpeed.Name = "UploadSpeed";
+            this.UploadSpeed.OuterColor = System.Drawing.Color.Gray;
+            this.UploadSpeed.OuterMargin = -25;
+            this.UploadSpeed.OuterWidth = 26;
+            this.UploadSpeed.ProgressColor = System.Drawing.Color.Red;
+            this.UploadSpeed.ProgressWidth = 25;
+            this.UploadSpeed.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.UploadSpeed.Size = new System.Drawing.Size(320, 320);
+            this.UploadSpeed.StartAngle = 270;
+            this.UploadSpeed.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.UploadSpeed.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.UploadSpeed.SubscriptText = "";
+            this.UploadSpeed.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.UploadSpeed.SuperscriptMargin = new System.Windows.Forms.Padding(-10, 10, 0, 0);
+            this.UploadSpeed.SuperscriptText = "";
+            this.UploadSpeed.TabIndex = 2;
+            this.UploadSpeed.Text = "0 mbs";
+            this.UploadSpeed.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.UploadSpeed.Value = 68;
+            // 
+            // DownloadSpeed
+            // 
+            this.DownloadSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DownloadSpeed.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
+            this.DownloadSpeed.AnimationSpeed = 500;
+            this.DownloadSpeed.BackColor = System.Drawing.Color.Transparent;
+            this.DownloadSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold);
+            this.DownloadSpeed.ForeColor = System.Drawing.Color.Lime;
+            this.DownloadSpeed.InnerColor = System.Drawing.Color.Transparent;
+            this.DownloadSpeed.InnerMargin = 2;
+            this.DownloadSpeed.InnerWidth = -1;
+            this.DownloadSpeed.Location = new System.Drawing.Point(165, 20);
+            this.DownloadSpeed.MarqueeAnimationSpeed = 2000;
+            this.DownloadSpeed.Name = "DownloadSpeed";
+            this.DownloadSpeed.OuterColor = System.Drawing.Color.Gray;
+            this.DownloadSpeed.OuterMargin = -25;
+            this.DownloadSpeed.OuterWidth = 26;
+            this.DownloadSpeed.ProgressColor = System.Drawing.Color.Red;
+            this.DownloadSpeed.ProgressWidth = 25;
+            this.DownloadSpeed.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.DownloadSpeed.Size = new System.Drawing.Size(320, 320);
+            this.DownloadSpeed.StartAngle = 270;
+            this.DownloadSpeed.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.DownloadSpeed.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.DownloadSpeed.SubscriptText = "";
+            this.DownloadSpeed.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.DownloadSpeed.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.DownloadSpeed.SuperscriptText = "";
+            this.DownloadSpeed.TabIndex = 2;
+            this.DownloadSpeed.Text = "0 mbs";
+            this.DownloadSpeed.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.DownloadSpeed.Value = 68;
+            // 
+            // StartSpeedTest
+            // 
+            this.StartSpeedTest.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.StartSpeedTest.BackColor = System.Drawing.Color.Transparent;
+            this.StartSpeedTest.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.StartSpeedTest.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.GO1;
+            this.StartSpeedTest.Location = new System.Drawing.Point(443, 346);
+            this.StartSpeedTest.Name = "StartSpeedTest";
+            this.StartSpeedTest.Size = new System.Drawing.Size(216, 157);
+            this.StartSpeedTest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.StartSpeedTest.TabIndex = 4;
+            this.StartSpeedTest.TabStop = false;
+            this.StartSpeedTest.Click += new System.EventHandler(this.StartSpeedTest_Click);
             // 
             // About
             // 
@@ -669,6 +999,7 @@
             // 
             // Settings
             // 
+            this.Settings.Controls.Add(this.metroPanel4);
             this.Settings.Controls.Add(this.MouseSensitivity);
             this.Settings.Controls.Add(this.metroPanel2);
             this.Settings.Controls.Add(this.metroPanel1);
@@ -688,6 +1019,64 @@
             this.Settings.VerticalScrollbarSize = 10;
             this.Settings.Click += new System.EventHandler(this.Settings_Click);
             // 
+            // metroPanel4
+            // 
+            this.metroPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.metroPanel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.metroPanel4.Controls.Add(this.Resizablelabel);
+            this.metroPanel4.Controls.Add(this.ResizableToggle);
+            this.metroPanel4.Controls.Add(this.ResizableTitle);
+            this.metroPanel4.HorizontalScrollbarBarColor = true;
+            this.metroPanel4.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel4.HorizontalScrollbarSize = 10;
+            this.metroPanel4.Location = new System.Drawing.Point(495, 16);
+            this.metroPanel4.Name = "metroPanel4";
+            this.metroPanel4.Size = new System.Drawing.Size(212, 169);
+            this.metroPanel4.TabIndex = 11;
+            this.metroPanel4.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroPanel4.UseCustomBackColor = true;
+            this.metroPanel4.UseStyleColors = true;
+            this.metroPanel4.VerticalScrollbarBarColor = true;
+            this.metroPanel4.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel4.VerticalScrollbarSize = 10;
+            // 
+            // Resizablelabel
+            // 
+            this.Resizablelabel.AutoSize = true;
+            this.Resizablelabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.Resizablelabel.ForeColor = System.Drawing.Color.Yellow;
+            this.Resizablelabel.Location = new System.Drawing.Point(21, 132);
+            this.Resizablelabel.Name = "Resizablelabel";
+            this.Resizablelabel.Size = new System.Drawing.Size(119, 20);
+            this.Resizablelabel.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.Resizablelabel.TabIndex = 8;
+            this.Resizablelabel.Text = "Tool Is Resizable";
+            this.Resizablelabel.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.Resizablelabel.UseStyleColors = true;
+            // 
+            // ResizableToggle
+            // 
+            this.ResizableToggle.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ResizableToggle.Location = new System.Drawing.Point(35, 49);
+            this.ResizableToggle.Name = "ResizableToggle";
+            this.ResizableToggle.Size = new System.Drawing.Size(128, 51);
+            this.ResizableToggle.TabIndex = 7;
+            this.ResizableToggle.Text = "Off";
+            this.ResizableToggle.UseSelectable = true;
+            // 
+            // ResizableTitle
+            // 
+            this.ResizableTitle.AutoSize = true;
+            this.ResizableTitle.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.ResizableTitle.Location = new System.Drawing.Point(3, 10);
+            this.ResizableTitle.Name = "ResizableTitle";
+            this.ResizableTitle.Size = new System.Drawing.Size(108, 20);
+            this.ResizableTitle.Style = MetroFramework.MetroColorStyle.Blue;
+            this.ResizableTitle.TabIndex = 6;
+            this.ResizableTitle.Text = "Tool Resizable";
+            this.ResizableTitle.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.ResizableTitle.UseStyleColors = true;
+            // 
             // MouseSensitivity
             // 
             this.MouseSensitivity.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -698,9 +1087,9 @@
             this.MouseSensitivity.HorizontalScrollbarBarColor = true;
             this.MouseSensitivity.HorizontalScrollbarHighlightOnWheel = false;
             this.MouseSensitivity.HorizontalScrollbarSize = 10;
-            this.MouseSensitivity.Location = new System.Drawing.Point(499, 16);
+            this.MouseSensitivity.Location = new System.Drawing.Point(16, 191);
             this.MouseSensitivity.Name = "MouseSensitivity";
-            this.MouseSensitivity.Size = new System.Drawing.Size(392, 95);
+            this.MouseSensitivity.Size = new System.Drawing.Size(461, 95);
             this.MouseSensitivity.Style = MetroFramework.MetroColorStyle.Red;
             this.MouseSensitivity.TabIndex = 10;
             this.MouseSensitivity.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -714,10 +1103,10 @@
             this.metroTrackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.metroTrackBar1.BackColor = System.Drawing.Color.Transparent;
             this.metroTrackBar1.DisplayFocus = true;
-            this.metroTrackBar1.Location = new System.Drawing.Point(8, 49);
+            this.metroTrackBar1.Location = new System.Drawing.Point(16, 49);
             this.metroTrackBar1.Minimum = 20;
             this.metroTrackBar1.Name = "metroTrackBar1";
-            this.metroTrackBar1.Size = new System.Drawing.Size(366, 23);
+            this.metroTrackBar1.Size = new System.Drawing.Size(427, 23);
             this.metroTrackBar1.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroTrackBar1.TabIndex = 7;
             this.metroTrackBar1.Text = "metroTrackBar1";
@@ -967,6 +1356,19 @@
             this.SetTopMost.UseStyleColors = true;
             this.SetTopMost.Click += new System.EventHandler(this.Set_Click);
             // 
+            // SSID
+            // 
+            this.SSID.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.SSID.AutoSize = true;
+            this.SSID.Location = new System.Drawing.Point(20, 44);
+            this.SSID.Name = "SSID";
+            this.SSID.Size = new System.Drawing.Size(124, 20);
+            this.SSID.Style = MetroFramework.MetroColorStyle.Lime;
+            this.SSID.TabIndex = 4;
+            this.SSID.Text = "Current WIFI SSID: ";
+            this.SSID.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.SSID.UseStyleColors = true;
+            // 
             // DriveScanTimer
             // 
             this.DriveScanTimer.Enabled = true;
@@ -984,11 +1386,11 @@
             this.ram.CategoryName = "Memory";
             this.ram.CounterName = "% Committed bytes in use";
             // 
-            // Timer1
+            // memory
             // 
-            this.Timer1.Enabled = true;
-            this.Timer1.Interval = 500;
-            this.Timer1.Tick += new System.EventHandler(this.CPUTimer_Tick);
+            this.memory.Enabled = true;
+            this.memory.Interval = 500;
+            this.memory.Tick += new System.EventHandler(this.CPUTimer_Tick);
             // 
             // notifyIcon1
             // 
@@ -1003,183 +1405,25 @@
             this.Opacity.Interval = 500;
             this.Opacity.Tick += new System.EventHandler(this.Opacity_Tick);
             // 
-            // Username
-            // 
-            this.Username.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.Username.AutoSize = true;
-            this.Username.Location = new System.Drawing.Point(20, 138);
-            this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(80, 20);
-            this.Username.Style = MetroFramework.MetroColorStyle.Lime;
-            this.Username.TabIndex = 4;
-            this.Username.Text = "Username: ";
-            this.Username.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.Username.UseStyleColors = true;
-            // 
-            // Notes
-            // 
-            this.Notes.Controls.Add(this.metroPanel3);
-            this.Notes.HorizontalScrollbarBarColor = true;
-            this.Notes.HorizontalScrollbarHighlightOnWheel = false;
-            this.Notes.HorizontalScrollbarSize = 10;
-            this.Notes.Location = new System.Drawing.Point(4, 38);
-            this.Notes.Name = "Notes";
-            this.Notes.Size = new System.Drawing.Size(1054, 522);
-            this.Notes.Style = MetroFramework.MetroColorStyle.Yellow;
-            this.Notes.TabIndex = 6;
-            this.Notes.Text = "Notes";
-            this.Notes.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.Notes.VerticalScrollbarBarColor = true;
-            this.Notes.VerticalScrollbarHighlightOnWheel = false;
-            this.Notes.VerticalScrollbarSize = 10;
-            // 
-            // metroPanel3
-            // 
-            this.metroPanel3.Controls.Add(this.toolStrip1);
-            this.metroPanel3.Controls.Add(this.richTextBox1);
-            this.metroPanel3.HorizontalScrollbarBarColor = true;
-            this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.HorizontalScrollbarSize = 10;
-            this.metroPanel3.Location = new System.Drawing.Point(3, 13);
-            this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(1043, 506);
-            this.metroPanel3.Style = MetroFramework.MetroColorStyle.Yellow;
-            this.metroPanel3.TabIndex = 2;
-            this.metroPanel3.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroPanel3.VerticalScrollbarBarColor = true;
-            this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.VerticalScrollbarSize = 10;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.Color.Black;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
-            this.richTextBox1.ForeColor = System.Drawing.Color.Lime;
-            this.richTextBox1.Location = new System.Drawing.Point(3, 41);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1037, 449);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "Enter Text Here";
-            this.richTextBox1.Click += new System.EventHandler(this.richTextBox1_Click_1);
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.BackColor = System.Drawing.Color.Black;
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton3,
-            this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton4});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1043, 27);
-            this.toolStrip1.TabIndex = 3;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // pictureBox2
+            // ToolSize
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 302);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1035, 193);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox2_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 56);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1035, 193);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
-            // 
-            // refreshdrives
-            // 
-            this.refreshdrives.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.refreshdrives.BackColor = System.Drawing.Color.Transparent;
-            this.refreshdrives.BackgroundImage = global::Brett_Tech_Control_Panel_V3.Properties.Resources.refresh1;
-            this.refreshdrives.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.refreshdrives.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.refreshdrives.Location = new System.Drawing.Point(867, 425);
-            this.refreshdrives.Name = "refreshdrives";
-            this.refreshdrives.Size = new System.Drawing.Size(35, 28);
-            this.refreshdrives.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.refreshdrives.TabIndex = 6;
-            this.refreshdrives.TabStop = false;
-            this.refreshdrives.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.task_manager;
-            this.pictureBox3.Location = new System.Drawing.Point(777, 16);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(109, 77);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources._new;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(24, 24);
-            this.toolStripButton3.Text = "toolStripButton3";
-            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.save;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
-            this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.open;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(24, 24);
-            this.toolStripButton2.Text = "toolStripButton2";
-            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.info;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(24, 24);
-            this.toolStripButton4.Text = "toolStripButton4";
-            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
+            this.ToolSize.Enabled = true;
+            this.ToolSize.Interval = 500;
+            this.ToolSize.Tick += new System.EventHandler(this.ToolSize_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1076, 668);
             this.Controls.Add(this.TabControl1);
             this.Controls.Add(this.Time);
+            this.Controls.Add(this.Username);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -1193,12 +1437,26 @@
             this.SystemInfoPanel.PerformLayout();
             this.CPURAM.ResumeLayout(false);
             this.CPURAM.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.VirusScanner.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.refreshdrives)).EndInit();
             this.TaskManager.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.TaskManRighClick.ResumeLayout(false);
+            this.Notes.ResumeLayout(false);
+            this.metroPanel3.ResumeLayout(false);
+            this.metroPanel3.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            this.SpeedTester.ResumeLayout(false);
+            this.SpeedTester.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StartSpeedTest)).EndInit();
             this.About.ResumeLayout(false);
             this.About.PerformLayout();
             this.Settings.ResumeLayout(false);
+            this.metroPanel4.ResumeLayout(false);
+            this.metroPanel4.PerformLayout();
             this.MouseSensitivity.ResumeLayout(false);
             this.MouseSensitivity.PerformLayout();
             this.metroPanel2.ResumeLayout(false);
@@ -1207,15 +1465,6 @@
             this.metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cpu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ram)).EndInit();
-            this.Notes.ResumeLayout(false);
-            this.metroPanel3.ResumeLayout(false);
-            this.metroPanel3.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.refreshdrives)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1247,7 +1496,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Diagnostics.PerformanceCounter cpu;
         private System.Diagnostics.PerformanceCounter ram;
-        private System.Windows.Forms.Timer Timer1;
+        private System.Windows.Forms.Timer memory;
         private MetroFramework.Controls.MetroTabPage Settings;
         private MetroFramework.Controls.MetroButton SetTopMost;
         private MetroFramework.Controls.MetroLabel metroLabel1;
@@ -1287,13 +1536,26 @@
         private MetroFramework.Controls.MetroTabPage Notes;
         private MetroFramework.Controls.MetroPanel metroPanel3;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton SaveFile;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton OpenFile;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton Newfile;
+        private System.Windows.Forms.ToolStripButton Information;
+        private MetroFramework.Controls.MetroTabPage SpeedTester;
+        private MetroFramework.Controls.MetroLabel DownloadLabel;
+        private CircularProgressBar.CircularProgressBar UploadSpeed;
+        private CircularProgressBar.CircularProgressBar DownloadSpeed;
+        private MetroFramework.Controls.MetroLabel UploadLabel;
+        private System.Windows.Forms.PictureBox StartSpeedTest;
+        private MetroFramework.Controls.MetroPanel metroPanel4;
+        private MetroFramework.Controls.MetroToggle ResizableToggle;
+        private MetroFramework.Controls.MetroLabel ResizableTitle;
+        private System.Windows.Forms.Timer ToolSize;
+        private MetroFramework.Controls.MetroLabel Resizablelabel;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton VoiceRecorder;
     }
 }
 

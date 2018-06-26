@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.5.6403.13419, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.5.6403.13419\lib\net35-client\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="cmd, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\cmd.0.2.0\lib\net40\cmd.dll</HintPath>
+    </Reference>
     <Reference Include="Fader Theme">
       <HintPath>..\..\..\..\Documents\GitHub\Moradi-Notepad\Moradi Notepad\bin\Debug\Fader Theme.dll</HintPath>
     </Reference>
@@ -56,6 +62,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
@@ -134,6 +143,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\imageedit_3_9181925304.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GO1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recorder1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RECORDER PRO.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

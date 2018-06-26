@@ -103,6 +103,26 @@ namespace Brett_Tech_Control_Panel_V3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GO {
+            get {
+                object obj = ResourceManager.GetObject("GO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GO1 {
+            get {
+                object obj = ResourceManager.GetObject("GO1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imageedit_3_9181925304 {
             get {
                 object obj = ResourceManager.GetObject("imageedit_3_9181925304", resourceCulture);
@@ -126,6 +146,36 @@ namespace Brett_Tech_Control_Panel_V3.Properties {
         internal static System.Drawing.Bitmap open {
             get {
                 object obj = ResourceManager.GetObject("open", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap recorder {
+            get {
+                object obj = ResourceManager.GetObject("recorder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RECORDER_PRO {
+            get {
+                object obj = ResourceManager.GetObject("RECORDER PRO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap recorder1 {
+            get {
+                object obj = ResourceManager.GetObject("recorder1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

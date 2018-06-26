@@ -71,7 +71,7 @@ namespace Brett_Tech_Control_Panel_V3
             SSID.Text = "Current WIFI SSID: " + (ssid);
 
             // Print Username
-            Username.Text = "Username:   " + (System.Environment.UserName);
+            Username.Text = "Welcome: " + (System.Environment.UserName);
             
         }
 
@@ -505,6 +505,45 @@ namespace Brett_Tech_Control_Panel_V3
         {
             Notepad note = new Notepad();
             note.Show();
+        }
+
+        private void DownloadLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StartSpeedTest_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                UploadSpeed.Text = "TEST";
+                DownloadSpeed.Text = "TEST";
+            }
+            catch { MessageBox.Show("Sorry We Can't Process That Right Now", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+        }
+
+        private void ToolSize_Tick(object sender, EventArgs e)
+        {
+            if (ResizableToggle.Checked == true)
+            {
+                this.Resizable = false;
+                Resizablelabel.Text = "Tool Is Not Resizable";
+            }
+            if(ResizableToggle.Checked == false)
+            {
+                this.Resizable = true;
+                Resizablelabel.Text = "Tool Is Resizable";
+            }
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This Feature Is Only Avalible In Moradi Notepad Please Download Full Notepad Software At: https://github.com/Brett-Tech-Networking/Moradi-Notepad/releases", "Speech To Text Unavailable", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void WIFISSIDLIST_Tick(object sender, EventArgs e)
+        {
+           
         }
     }
 }
