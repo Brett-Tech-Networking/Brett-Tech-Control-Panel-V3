@@ -6,9 +6,8 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.IO;
 using System.Net;
-using System.Net.NetworkInformation;
-using System.Collections.ObjectModel;
 using System.Linq;
+using Microsoft.Win32;
 
 namespace Brett_Tech_Control_Panel_V3
 {
@@ -24,14 +23,18 @@ namespace Brett_Tech_Control_Panel_V3
             InitializeComponent();
         }
 
-        Process[] proc;
+        Process[] procs;
 
-        void GetAllProcess()
+        private void GetAllProcess()
         {
-            proc = Process.GetProcesses();
+            procs = Process.GetProcesses();
+          
             listBox1.Items.Clear();
-            foreach (Process p in proc)
-                listBox1.Items.Add(p.ProcessName);
+            for (int i = 0; i< procs.Length; i++)
+            {
+                listBox1.Items.Add(procs[i].ProcessName);
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -72,8 +75,10 @@ namespace Brett_Tech_Control_Panel_V3
 
             // Print Username
             Username.Text = "Welcome: " + (System.Environment.UserName);
-            
-        }
+
+           
+
+    }
 
         private void Clock_Tick(object sender, EventArgs e)
         {
@@ -219,18 +224,7 @@ namespace Brett_Tech_Control_Panel_V3
 
         private void Set_Click(object sender, EventArgs e)
         {
-            if (TopMostTrue.Checked == true)
-            {
-                this.TopMost = true;
-                notifyIcon1.ShowBalloonTip(100, "Brett Tech Networking", "Brett Tech Control Panel Will Now Remain On Top Of All Apps", ToolTipIcon.Info);
-            }
-            else
-              if (TopMostFalse.Checked == true)
-            {
-                this.TopMost = false;
-                notifyIcon1.ShowBalloonTip(100, "Brett Tech Networking", "Brett Tech Control Panel Will Now Act As Normal", ToolTipIcon.Info);
-
-            }
+          
         }
 
         private void ShowNotifyIcon(string v1, bool v2, int v3)
@@ -273,7 +267,7 @@ namespace Brett_Tech_Control_Panel_V3
         {
             try
             {
-                proc[listBox1.SelectedIndex].Kill();
+                procs[listBox1.SelectedIndex].Kill();
                 GetAllProcess();
             }
             catch (Exception ex)
@@ -284,16 +278,8 @@ namespace Brett_Tech_Control_Panel_V3
 
         private void KillProcess_Click(object sender, EventArgs e)
         {
-            try
-            {
-                Process p = System.Diagnostics.Process.GetProcessById(Convert.ToInt32(listBox1.Tag));
-                if (p != null)
-                    p.Kill();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+                procs[listBox1.SelectedIndex].Kill();
+                GetAllProcess();
         }
 
         private void TaskManager_Click(object sender, EventArgs e)
@@ -526,13 +512,14 @@ namespace Brett_Tech_Control_Panel_V3
         {
             if (ResizableToggle.Checked == true)
             {
-                this.Resizable = false;
-                Resizablelabel.Text = "Tool Is Not Resizable";
-            }
-            if(ResizableToggle.Checked == false)
-            {
                 this.Resizable = true;
                 Resizablelabel.Text = "Tool Is Resizable";
+
+            }
+            if (ResizableToggle.Checked == false)
+            {
+                this.Resizable = false;
+                Resizablelabel.Text = "Tool Is Not Resizable";
             }
         }
 
@@ -543,6 +530,61 @@ namespace Brett_Tech_Control_Panel_V3
 
         private void WIFISSIDLIST_Tick(object sender, EventArgs e)
         {
+           
+        }
+
+        private void SetTheme_Click(object sender, EventArgs e)
+        {
+            if (redtheme.Checked == true)
+            {
+                this.BackColor = Color.Red;
+            }
+        }
+
+        private void TopMostFalse_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ResizableToggle_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SoftwareTheme_Tick(object sender, EventArgs e)
+        {
+            if (TopAlwaysToggle.Checked == true)
+            {
+                this.TopMost = true;
+
+            }
+            if (TopAlwaysToggle.Checked == false)
+            {
+                this.TopMost = false;
+            }
+        }
+
+        private void InstalledPrograms_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Applications apps = new Applications();
+            apps.Show();
+        }
+
+        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start("C:/Program Files (x86)/Moradi Notepad V4/Moradi Notepad/bin/Debug/Moradi Notepad.exe");
+            }
+            catch
+            {
+                Process.Start("https://github.com/Brett-Tech-Networking/Moradi-Notepad/releases/download/V4/Moradi.Notepad.Advanced.Installer.exe");
+            }
            
         }
     }

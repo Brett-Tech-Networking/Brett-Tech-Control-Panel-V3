@@ -35,3 +35,4 @@ C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Cont
 C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\bin\Debug\CircularProgressBar.xml
 C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\bin\Debug\WinFormAnimation.xml
 C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\bin\Debug\cmd.dll
+C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\obj\Debug\Brett_Tech_Control_Panel_V3.Applications.resources
