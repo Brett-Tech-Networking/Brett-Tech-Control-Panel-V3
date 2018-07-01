@@ -50,9 +50,11 @@ namespace Brett_Tech_Control_Panel_V3
             PCName.Text = "Your PC Name:  " + (System.Environment.MachineName);
 
             // get ssid
-            var process = new Process
+            try
             {
-                StartInfo =
+                var process = new Process
+                {
+                    StartInfo =
                           {
                               FileName = "netsh.exe",
                               Arguments = "wlan show interfaces",
@@ -60,18 +62,23 @@ namespace Brett_Tech_Control_Panel_V3
                               RedirectStandardOutput = true,
                               CreateNoWindow = true
                           }
-            };
-            process.Start();
+                };
+                process.Start();
 
-            var output = process.StandardOutput.ReadToEnd();
-            var line = output.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
-                             .FirstOrDefault(l => l.Contains("SSID") && !l.Contains("BSSID"));
-            if (line == null)
-            {
-                //
+                var output = process.StandardOutput.ReadToEnd();
+                var line = output.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
+                                 .FirstOrDefault(l => l.Contains("SSID") && !l.Contains("BSSID"));
+                if (line == null)
+                {
+                    //
+                }
+                var ssid = line.Split(new[] { ":" }, StringSplitOptions.RemoveEmptyEntries)[1].TrimStart();
+                SSID.Text = "Current WIFI SSID: " + (ssid);
             }
-            var ssid = line.Split(new[] { ":" }, StringSplitOptions.RemoveEmptyEntries)[1].TrimStart();
-            SSID.Text = "Current WIFI SSID: " + (ssid);
+            catch
+            {
+                SSID.Text = "Current WIFI SSID: Unavalible (are you hard wired?)";
+            }
 
             // Print Username
             Username.Text = "Welcome: " + (System.Environment.UserName);

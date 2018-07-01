@@ -158,9 +158,10 @@
             this.Time.AutoSize = true;
             this.Time.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.Time.ForeColor = System.Drawing.Color.Red;
-            this.Time.Location = new System.Drawing.Point(3, 640);
+            this.Time.Location = new System.Drawing.Point(2, 520);
+            this.Time.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Time.Name = "Time";
-            this.Time.Size = new System.Drawing.Size(93, 20);
+            this.Time.Size = new System.Drawing.Size(85, 19);
             this.Time.Style = MetroFramework.MetroColorStyle.Red;
             this.Time.TabIndex = 1;
             this.Time.Text = "00:00:00:00";
@@ -185,10 +186,11 @@
             "Hibernate",
             "Restart",
             "Logout"});
-            this.PowerComboBox.Location = new System.Drawing.Point(252, 474);
+            this.PowerComboBox.Location = new System.Drawing.Point(189, 385);
+            this.PowerComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PowerComboBox.Name = "PowerComboBox";
             this.PowerComboBox.PromptText = "Please Make A Selection";
-            this.PowerComboBox.Size = new System.Drawing.Size(526, 30);
+            this.PowerComboBox.Size = new System.Drawing.Size(396, 30);
             this.PowerComboBox.Style = MetroFramework.MetroColorStyle.Blue;
             this.PowerComboBox.TabIndex = 2;
             this.PowerComboBox.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -201,9 +203,10 @@
             this.ShutdownOptionsLabel.AutoSize = true;
             this.ShutdownOptionsLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.ShutdownOptionsLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.ShutdownOptionsLabel.Location = new System.Drawing.Point(428, 440);
+            this.ShutdownOptionsLabel.Location = new System.Drawing.Point(321, 358);
+            this.ShutdownOptionsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ShutdownOptionsLabel.Name = "ShutdownOptionsLabel";
-            this.ShutdownOptionsLabel.Size = new System.Drawing.Size(135, 25);
+            this.ShutdownOptionsLabel.Size = new System.Drawing.Size(129, 25);
             this.ShutdownOptionsLabel.Style = MetroFramework.MetroColorStyle.Yellow;
             this.ShutdownOptionsLabel.TabIndex = 3;
             this.ShutdownOptionsLabel.Text = "Power Options";
@@ -229,10 +232,11 @@
             this.TabControl1.Controls.Add(this.SpeedTester);
             this.TabControl1.Controls.Add(this.About);
             this.TabControl1.Controls.Add(this.Settings);
-            this.TabControl1.Location = new System.Drawing.Point(3, 63);
+            this.TabControl1.Location = new System.Drawing.Point(2, 51);
+            this.TabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TabControl1.Name = "TabControl1";
             this.TabControl1.SelectedIndex = 4;
-            this.TabControl1.Size = new System.Drawing.Size(1062, 564);
+            this.TabControl1.Size = new System.Drawing.Size(796, 458);
             this.TabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.TabControl1.Style = MetroFramework.MetroColorStyle.Yellow;
             this.TabControl1.TabIndex = 4;
@@ -249,10 +253,11 @@
             this.Main.Controls.Add(this.PowerComboBox);
             this.Main.HorizontalScrollbarBarColor = true;
             this.Main.HorizontalScrollbarHighlightOnWheel = false;
-            this.Main.HorizontalScrollbarSize = 10;
+            this.Main.HorizontalScrollbarSize = 8;
             this.Main.Location = new System.Drawing.Point(4, 38);
+            this.Main.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Main.Name = "Main";
-            this.Main.Size = new System.Drawing.Size(1054, 522);
+            this.Main.Size = new System.Drawing.Size(788, 416);
             this.Main.Style = MetroFramework.MetroColorStyle.Blue;
             this.Main.TabIndex = 0;
             this.Main.Text = "Main";
@@ -260,7 +265,7 @@
             this.Main.UseStyleColors = true;
             this.Main.VerticalScrollbarBarColor = true;
             this.Main.VerticalScrollbarHighlightOnWheel = false;
-            this.Main.VerticalScrollbarSize = 10;
+            this.Main.VerticalScrollbarSize = 8;
             this.Main.Click += new System.EventHandler(this.Main_Click);
             // 
             // button1
@@ -268,9 +273,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Yellow;
-            this.button1.Location = new System.Drawing.Point(0, 236);
+            this.button1.Location = new System.Drawing.Point(0, 192);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(207, 30);
+            this.button1.Size = new System.Drawing.Size(155, 24);
             this.button1.TabIndex = 7;
             this.button1.Text = "List Installed Programs";
             this.button1.UseVisualStyleBackColor = true;
@@ -286,17 +292,18 @@
             this.SystemInfoPanel.Controls.Add(this.YourIP);
             this.SystemInfoPanel.HorizontalScrollbarBarColor = true;
             this.SystemInfoPanel.HorizontalScrollbarHighlightOnWheel = false;
-            this.SystemInfoPanel.HorizontalScrollbarSize = 10;
-            this.SystemInfoPanel.Location = new System.Drawing.Point(3, 3);
+            this.SystemInfoPanel.HorizontalScrollbarSize = 8;
+            this.SystemInfoPanel.Location = new System.Drawing.Point(2, 2);
+            this.SystemInfoPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SystemInfoPanel.Name = "SystemInfoPanel";
-            this.SystemInfoPanel.Size = new System.Drawing.Size(505, 227);
+            this.SystemInfoPanel.Size = new System.Drawing.Size(380, 185);
             this.SystemInfoPanel.Style = MetroFramework.MetroColorStyle.Blue;
             this.SystemInfoPanel.TabIndex = 6;
             this.SystemInfoPanel.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.SystemInfoPanel.UseStyleColors = true;
             this.SystemInfoPanel.VerticalScrollbarBarColor = true;
             this.SystemInfoPanel.VerticalScrollbarHighlightOnWheel = false;
-            this.SystemInfoPanel.VerticalScrollbarSize = 10;
+            this.SystemInfoPanel.VerticalScrollbarSize = 8;
             // 
             // Notice
             // 
@@ -304,9 +311,10 @@
             this.Notice.AutoSize = true;
             this.Notice.FontSize = MetroFramework.MetroLabelSize.Small;
             this.Notice.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.Notice.Location = new System.Drawing.Point(11, 198);
+            this.Notice.Location = new System.Drawing.Point(8, 161);
+            this.Notice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Notice.Name = "Notice";
-            this.Notice.Size = new System.Drawing.Size(392, 17);
+            this.Notice.Size = new System.Drawing.Size(352, 15);
             this.Notice.Style = MetroFramework.MetroColorStyle.Red;
             this.Notice.TabIndex = 6;
             this.Notice.Text = "Please Note: No Information Shown Here Is Logged Or Shared";
@@ -317,9 +325,10 @@
             // 
             this.SSID.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.SSID.AutoSize = true;
-            this.SSID.Location = new System.Drawing.Point(20, 44);
+            this.SSID.Location = new System.Drawing.Point(15, 36);
+            this.SSID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SSID.Name = "SSID";
-            this.SSID.Size = new System.Drawing.Size(124, 20);
+            this.SSID.Size = new System.Drawing.Size(120, 19);
             this.SSID.Style = MetroFramework.MetroColorStyle.Lime;
             this.SSID.TabIndex = 4;
             this.SSID.Text = "Current WIFI SSID: ";
@@ -330,9 +339,10 @@
             // 
             this.sysInfo.AutoSize = true;
             this.sysInfo.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.sysInfo.Location = new System.Drawing.Point(3, 10);
+            this.sysInfo.Location = new System.Drawing.Point(2, 8);
+            this.sysInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.sysInfo.Name = "sysInfo";
-            this.sysInfo.Size = new System.Drawing.Size(149, 20);
+            this.sysInfo.Size = new System.Drawing.Size(140, 19);
             this.sysInfo.Style = MetroFramework.MetroColorStyle.Blue;
             this.sysInfo.TabIndex = 5;
             this.sysInfo.Text = "System Information";
@@ -343,9 +353,10 @@
             // 
             this.PCName.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.PCName.AutoSize = true;
-            this.PCName.Location = new System.Drawing.Point(20, 110);
+            this.PCName.Location = new System.Drawing.Point(15, 89);
+            this.PCName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PCName.Name = "PCName";
-            this.PCName.Size = new System.Drawing.Size(103, 20);
+            this.PCName.Size = new System.Drawing.Size(100, 19);
             this.PCName.Style = MetroFramework.MetroColorStyle.Lime;
             this.PCName.TabIndex = 4;
             this.PCName.Text = "Your PC Name:";
@@ -356,9 +367,10 @@
             // 
             this.YourIP.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.YourIP.AutoSize = true;
-            this.YourIP.Location = new System.Drawing.Point(20, 77);
+            this.YourIP.Location = new System.Drawing.Point(15, 63);
+            this.YourIP.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.YourIP.Name = "YourIP";
-            this.YourIP.Size = new System.Drawing.Size(55, 20);
+            this.YourIP.Size = new System.Drawing.Size(54, 19);
             this.YourIP.Style = MetroFramework.MetroColorStyle.Lime;
             this.YourIP.TabIndex = 4;
             this.YourIP.Text = "Your IP:";
@@ -373,16 +385,17 @@
             this.CPURAM.Controls.Add(this.pictureBox1);
             this.CPURAM.HorizontalScrollbarBarColor = true;
             this.CPURAM.HorizontalScrollbarHighlightOnWheel = false;
-            this.CPURAM.HorizontalScrollbarSize = 10;
+            this.CPURAM.HorizontalScrollbarSize = 8;
             this.CPURAM.Location = new System.Drawing.Point(4, 38);
+            this.CPURAM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CPURAM.Name = "CPURAM";
-            this.CPURAM.Size = new System.Drawing.Size(1054, 522);
+            this.CPURAM.Size = new System.Drawing.Size(788, 416);
             this.CPURAM.TabIndex = 1;
             this.CPURAM.Text = "CPU/RAM";
             this.CPURAM.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.CPURAM.VerticalScrollbarBarColor = true;
             this.CPURAM.VerticalScrollbarHighlightOnWheel = false;
-            this.CPURAM.VerticalScrollbarSize = 10;
+            this.CPURAM.VerticalScrollbarSize = 8;
             // 
             // MemoryLabel
             // 
@@ -390,9 +403,10 @@
             this.MemoryLabel.AutoSize = true;
             this.MemoryLabel.BackColor = System.Drawing.Color.Black;
             this.MemoryLabel.ForeColor = System.Drawing.Color.Lime;
-            this.MemoryLabel.Location = new System.Drawing.Point(16, 282);
+            this.MemoryLabel.Location = new System.Drawing.Point(12, 229);
+            this.MemoryLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MemoryLabel.Name = "MemoryLabel";
-            this.MemoryLabel.Size = new System.Drawing.Size(103, 17);
+            this.MemoryLabel.Size = new System.Drawing.Size(78, 13);
             this.MemoryLabel.TabIndex = 4;
             this.MemoryLabel.Text = "Memory Usage";
             // 
@@ -401,9 +415,10 @@
             this.CPULabel.AutoSize = true;
             this.CPULabel.BackColor = System.Drawing.Color.Black;
             this.CPULabel.ForeColor = System.Drawing.Color.Lime;
-            this.CPULabel.Location = new System.Drawing.Point(16, 36);
+            this.CPULabel.Location = new System.Drawing.Point(12, 29);
+            this.CPULabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CPULabel.Name = "CPULabel";
-            this.CPULabel.Size = new System.Drawing.Size(81, 17);
+            this.CPULabel.Size = new System.Drawing.Size(63, 13);
             this.CPULabel.TabIndex = 4;
             this.CPULabel.Text = "CPU Usage";
             // 
@@ -412,9 +427,10 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.pictureBox2.Location = new System.Drawing.Point(16, 302);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 245);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1035, 193);
+            this.pictureBox2.Size = new System.Drawing.Size(776, 157);
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox2_Paint);
@@ -425,9 +441,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 56);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 46);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1035, 193);
+            this.pictureBox1.Size = new System.Drawing.Size(776, 157);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
@@ -442,17 +459,18 @@
             this.VirusScanner.Controls.Add(this.metroProgressBar1);
             this.VirusScanner.HorizontalScrollbarBarColor = true;
             this.VirusScanner.HorizontalScrollbarHighlightOnWheel = false;
-            this.VirusScanner.HorizontalScrollbarSize = 10;
+            this.VirusScanner.HorizontalScrollbarSize = 8;
             this.VirusScanner.Location = new System.Drawing.Point(4, 38);
+            this.VirusScanner.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.VirusScanner.Name = "VirusScanner";
-            this.VirusScanner.Size = new System.Drawing.Size(1054, 522);
+            this.VirusScanner.Size = new System.Drawing.Size(788, 416);
             this.VirusScanner.Style = MetroFramework.MetroColorStyle.Yellow;
             this.VirusScanner.TabIndex = 4;
             this.VirusScanner.Text = "Virus Scanner";
             this.VirusScanner.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.VirusScanner.VerticalScrollbarBarColor = true;
             this.VirusScanner.VerticalScrollbarHighlightOnWheel = false;
-            this.VirusScanner.VerticalScrollbarSize = 10;
+            this.VirusScanner.VerticalScrollbarSize = 8;
             // 
             // refreshdrives
             // 
@@ -461,9 +479,10 @@
             this.refreshdrives.BackgroundImage = global::Brett_Tech_Control_Panel_V3.Properties.Resources.refresh1;
             this.refreshdrives.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.refreshdrives.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.refreshdrives.Location = new System.Drawing.Point(867, 425);
+            this.refreshdrives.Location = new System.Drawing.Point(650, 345);
+            this.refreshdrives.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.refreshdrives.Name = "refreshdrives";
-            this.refreshdrives.Size = new System.Drawing.Size(35, 28);
+            this.refreshdrives.Size = new System.Drawing.Size(26, 23);
             this.refreshdrives.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.refreshdrives.TabIndex = 6;
             this.refreshdrives.TabStop = false;
@@ -477,10 +496,11 @@
             this.metroListView2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.metroListView2.ForeColor = System.Drawing.Color.Yellow;
             this.metroListView2.FullRowSelect = true;
-            this.metroListView2.Location = new System.Drawing.Point(530, 61);
+            this.metroListView2.Location = new System.Drawing.Point(398, 50);
+            this.metroListView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroListView2.Name = "metroListView2";
             this.metroListView2.OwnerDraw = true;
-            this.metroListView2.Size = new System.Drawing.Size(487, 357);
+            this.metroListView2.Size = new System.Drawing.Size(366, 291);
             this.metroListView2.Style = MetroFramework.MetroColorStyle.Yellow;
             this.metroListView2.TabIndex = 5;
             this.metroListView2.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -498,10 +518,11 @@
             this.metroListView1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.metroListView1.ForeColor = System.Drawing.Color.Yellow;
             this.metroListView1.FullRowSelect = true;
-            this.metroListView1.Location = new System.Drawing.Point(37, 61);
+            this.metroListView1.Location = new System.Drawing.Point(28, 50);
+            this.metroListView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroListView1.Name = "metroListView1";
             this.metroListView1.OwnerDraw = true;
-            this.metroListView1.Size = new System.Drawing.Size(487, 357);
+            this.metroListView1.Size = new System.Drawing.Size(366, 291);
             this.metroListView1.Style = MetroFramework.MetroColorStyle.Yellow;
             this.metroListView1.TabIndex = 5;
             this.metroListView1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -517,9 +538,10 @@
             this.ScanButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ScanButton.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.ScanButton.Highlight = true;
-            this.ScanButton.Location = new System.Drawing.Point(55, 443);
+            this.ScanButton.Location = new System.Drawing.Point(41, 360);
+            this.ScanButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ScanButton.Name = "ScanButton";
-            this.ScanButton.Size = new System.Drawing.Size(112, 47);
+            this.ScanButton.Size = new System.Drawing.Size(84, 38);
             this.ScanButton.Style = MetroFramework.MetroColorStyle.Red;
             this.ScanButton.TabIndex = 4;
             this.ScanButton.Text = "Scan";
@@ -532,10 +554,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DriveCombo.FormattingEnabled = true;
             this.DriveCombo.ItemHeight = 24;
-            this.DriveCombo.Location = new System.Drawing.Point(199, 423);
+            this.DriveCombo.Location = new System.Drawing.Point(149, 344);
+            this.DriveCombo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DriveCombo.Name = "DriveCombo";
             this.DriveCombo.PromptText = "Select A Drive To Scan";
-            this.DriveCombo.Size = new System.Drawing.Size(660, 30);
+            this.DriveCombo.Size = new System.Drawing.Size(496, 30);
             this.DriveCombo.Style = MetroFramework.MetroColorStyle.Red;
             this.DriveCombo.TabIndex = 3;
             this.DriveCombo.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -545,9 +568,10 @@
             // 
             this.metroProgressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroProgressBar1.Location = new System.Drawing.Point(-4, 496);
+            this.metroProgressBar1.Location = new System.Drawing.Point(-3, 403);
+            this.metroProgressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroProgressBar1.Name = "metroProgressBar1";
-            this.metroProgressBar1.Size = new System.Drawing.Size(1062, 23);
+            this.metroProgressBar1.Size = new System.Drawing.Size(796, 19);
             this.metroProgressBar1.Style = MetroFramework.MetroColorStyle.Yellow;
             this.metroProgressBar1.TabIndex = 2;
             this.metroProgressBar1.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -563,17 +587,18 @@
             this.TaskManager.ForeColor = System.Drawing.Color.Lime;
             this.TaskManager.HorizontalScrollbarBarColor = true;
             this.TaskManager.HorizontalScrollbarHighlightOnWheel = false;
-            this.TaskManager.HorizontalScrollbarSize = 10;
+            this.TaskManager.HorizontalScrollbarSize = 8;
             this.TaskManager.Location = new System.Drawing.Point(4, 38);
+            this.TaskManager.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TaskManager.Name = "TaskManager";
-            this.TaskManager.Size = new System.Drawing.Size(1054, 522);
+            this.TaskManager.Size = new System.Drawing.Size(788, 416);
             this.TaskManager.Style = MetroFramework.MetroColorStyle.Yellow;
             this.TaskManager.TabIndex = 3;
             this.TaskManager.Text = "Task Manager";
             this.TaskManager.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.TaskManager.VerticalScrollbarBarColor = true;
             this.TaskManager.VerticalScrollbarHighlightOnWheel = false;
-            this.TaskManager.VerticalScrollbarSize = 10;
+            this.TaskManager.VerticalScrollbarSize = 8;
             this.TaskManager.Click += new System.EventHandler(this.TaskManager_Click);
             // 
             // RefreshProcesses
@@ -581,9 +606,10 @@
             this.RefreshProcesses.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RefreshProcesses.DisplayFocus = true;
             this.RefreshProcesses.Highlight = true;
-            this.RefreshProcesses.Location = new System.Drawing.Point(892, 3);
+            this.RefreshProcesses.Location = new System.Drawing.Point(669, 2);
+            this.RefreshProcesses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RefreshProcesses.Name = "RefreshProcesses";
-            this.RefreshProcesses.Size = new System.Drawing.Size(159, 30);
+            this.RefreshProcesses.Size = new System.Drawing.Size(119, 24);
             this.RefreshProcesses.Style = MetroFramework.MetroColorStyle.Red;
             this.RefreshProcesses.TabIndex = 7;
             this.RefreshProcesses.Text = "Refresh Process List";
@@ -598,9 +624,10 @@
             this.KillProcess.DisplayFocus = true;
             this.KillProcess.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.KillProcess.Highlight = true;
-            this.KillProcess.Location = new System.Drawing.Point(777, 99);
+            this.KillProcess.Location = new System.Drawing.Point(583, 80);
+            this.KillProcess.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.KillProcess.Name = "KillProcess";
-            this.KillProcess.Size = new System.Drawing.Size(104, 32);
+            this.KillProcess.Size = new System.Drawing.Size(78, 26);
             this.KillProcess.Style = MetroFramework.MetroColorStyle.Red;
             this.KillProcess.TabIndex = 6;
             this.KillProcess.Text = "Kill Process";
@@ -615,9 +642,10 @@
             this.StartTask.DisplayFocus = true;
             this.StartTask.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.StartTask.Highlight = true;
-            this.StartTask.Location = new System.Drawing.Point(854, 481);
+            this.StartTask.Location = new System.Drawing.Point(640, 391);
+            this.StartTask.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StartTask.Name = "StartTask";
-            this.StartTask.Size = new System.Drawing.Size(82, 30);
+            this.StartTask.Size = new System.Drawing.Size(62, 24);
             this.StartTask.Style = MetroFramework.MetroColorStyle.Yellow;
             this.StartTask.TabIndex = 4;
             this.StartTask.Text = "Start";
@@ -633,9 +661,10 @@
             // 
             // 
             this.StartTextBox.CustomButton.Image = null;
-            this.StartTextBox.CustomButton.Location = new System.Drawing.Point(219, 1);
+            this.StartTextBox.CustomButton.Location = new System.Drawing.Point(123, 2);
+            this.StartTextBox.CustomButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StartTextBox.CustomButton.Name = "";
-            this.StartTextBox.CustomButton.Size = new System.Drawing.Size(33, 33);
+            this.StartTextBox.CustomButton.Size = new System.Drawing.Size(17, 19);
             this.StartTextBox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.StartTextBox.CustomButton.TabIndex = 1;
             this.StartTextBox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -643,7 +672,8 @@
             this.StartTextBox.CustomButton.Visible = false;
             this.StartTextBox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.StartTextBox.Lines = new string[0];
-            this.StartTextBox.Location = new System.Drawing.Point(777, 440);
+            this.StartTextBox.Location = new System.Drawing.Point(583, 358);
+            this.StartTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StartTextBox.MaxLength = 32767;
             this.StartTextBox.Name = "StartTextBox";
             this.StartTextBox.PasswordChar = '\0';
@@ -653,7 +683,7 @@
             this.StartTextBox.SelectionLength = 0;
             this.StartTextBox.SelectionStart = 0;
             this.StartTextBox.ShortcutsEnabled = true;
-            this.StartTextBox.Size = new System.Drawing.Size(253, 35);
+            this.StartTextBox.Size = new System.Drawing.Size(190, 28);
             this.StartTextBox.Style = MetroFramework.MetroColorStyle.Yellow;
             this.StartTextBox.TabIndex = 3;
             this.StartTextBox.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -668,9 +698,10 @@
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.task_manager;
-            this.pictureBox3.Location = new System.Drawing.Point(777, 16);
+            this.pictureBox3.Location = new System.Drawing.Point(583, 13);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(109, 77);
+            this.pictureBox3.Size = new System.Drawing.Size(82, 63);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
@@ -685,10 +716,11 @@
             this.listBox1.Font = new System.Drawing.Font("Sitka Subheading", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.ForeColor = System.Drawing.Color.Lime;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 24;
-            this.listBox1.Location = new System.Drawing.Point(3, 16);
+            this.listBox1.ItemHeight = 19;
+            this.listBox1.Location = new System.Drawing.Point(2, 13);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(768, 460);
+            this.listBox1.Size = new System.Drawing.Size(577, 365);
             this.listBox1.Sorted = true;
             this.listBox1.TabIndex = 2;
             // 
@@ -698,12 +730,12 @@
             this.TaskManRighClick.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.killProcessToolStripMenuItem});
             this.TaskManRighClick.Name = "TaskManRighClick";
-            this.TaskManRighClick.Size = new System.Drawing.Size(153, 28);
+            this.TaskManRighClick.Size = new System.Drawing.Size(134, 26);
             // 
             // killProcessToolStripMenuItem
             // 
             this.killProcessToolStripMenuItem.Name = "killProcessToolStripMenuItem";
-            this.killProcessToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.killProcessToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.killProcessToolStripMenuItem.Text = "Kill Process";
             this.killProcessToolStripMenuItem.Click += new System.EventHandler(this.killProcessToolStripMenuItem_Click);
             // 
@@ -712,17 +744,18 @@
             this.Notes.Controls.Add(this.metroPanel3);
             this.Notes.HorizontalScrollbarBarColor = true;
             this.Notes.HorizontalScrollbarHighlightOnWheel = false;
-            this.Notes.HorizontalScrollbarSize = 10;
+            this.Notes.HorizontalScrollbarSize = 8;
             this.Notes.Location = new System.Drawing.Point(4, 38);
+            this.Notes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Notes.Name = "Notes";
-            this.Notes.Size = new System.Drawing.Size(1054, 522);
+            this.Notes.Size = new System.Drawing.Size(788, 416);
             this.Notes.Style = MetroFramework.MetroColorStyle.Yellow;
             this.Notes.TabIndex = 6;
             this.Notes.Text = "Notes";
             this.Notes.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Notes.VerticalScrollbarBarColor = true;
             this.Notes.VerticalScrollbarHighlightOnWheel = false;
-            this.Notes.VerticalScrollbarSize = 10;
+            this.Notes.VerticalScrollbarSize = 8;
             // 
             // metroPanel3
             // 
@@ -730,16 +763,17 @@
             this.metroPanel3.Controls.Add(this.richTextBox1);
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.HorizontalScrollbarSize = 10;
-            this.metroPanel3.Location = new System.Drawing.Point(3, 13);
+            this.metroPanel3.HorizontalScrollbarSize = 8;
+            this.metroPanel3.Location = new System.Drawing.Point(2, 11);
+            this.metroPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(1043, 506);
+            this.metroPanel3.Size = new System.Drawing.Size(782, 411);
             this.metroPanel3.Style = MetroFramework.MetroColorStyle.Yellow;
             this.metroPanel3.TabIndex = 2;
             this.metroPanel3.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.VerticalScrollbarSize = 10;
+            this.metroPanel3.VerticalScrollbarSize = 8;
             // 
             // toolStrip1
             // 
@@ -755,7 +789,7 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1043, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(782, 27);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -825,7 +859,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(174, 24);
+            this.toolStripButton1.Size = new System.Drawing.Size(140, 24);
             this.toolStripButton1.Text = "Launch Moradi Notepad";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click_1);
             // 
@@ -834,9 +868,10 @@
             this.richTextBox1.BackColor = System.Drawing.Color.Black;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
             this.richTextBox1.ForeColor = System.Drawing.Color.Lime;
-            this.richTextBox1.Location = new System.Drawing.Point(3, 41);
+            this.richTextBox1.Location = new System.Drawing.Point(2, 33);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(1037, 449);
+            this.richTextBox1.Size = new System.Drawing.Size(779, 366);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "Enter Text Here";
             this.richTextBox1.Click += new System.EventHandler(this.richTextBox1_Click_1);
@@ -850,17 +885,18 @@
             this.SpeedTester.Controls.Add(this.StartSpeedTest);
             this.SpeedTester.HorizontalScrollbarBarColor = true;
             this.SpeedTester.HorizontalScrollbarHighlightOnWheel = false;
-            this.SpeedTester.HorizontalScrollbarSize = 10;
+            this.SpeedTester.HorizontalScrollbarSize = 8;
             this.SpeedTester.Location = new System.Drawing.Point(4, 38);
+            this.SpeedTester.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SpeedTester.Name = "SpeedTester";
-            this.SpeedTester.Size = new System.Drawing.Size(1054, 522);
+            this.SpeedTester.Size = new System.Drawing.Size(788, 416);
             this.SpeedTester.Style = MetroFramework.MetroColorStyle.Yellow;
             this.SpeedTester.TabIndex = 7;
             this.SpeedTester.Text = "Speed Tester";
             this.SpeedTester.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.SpeedTester.VerticalScrollbarBarColor = true;
             this.SpeedTester.VerticalScrollbarHighlightOnWheel = false;
-            this.SpeedTester.VerticalScrollbarSize = 10;
+            this.SpeedTester.VerticalScrollbarSize = 8;
             // 
             // UploadLabel
             // 
@@ -869,9 +905,10 @@
             this.UploadLabel.AutoSize = true;
             this.UploadLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.UploadLabel.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.UploadLabel.Location = new System.Drawing.Point(665, 355);
+            this.UploadLabel.Location = new System.Drawing.Point(499, 288);
+            this.UploadLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.UploadLabel.Name = "UploadLabel";
-            this.UploadLabel.Size = new System.Drawing.Size(137, 25);
+            this.UploadLabel.Size = new System.Drawing.Size(130, 25);
             this.UploadLabel.Style = MetroFramework.MetroColorStyle.Yellow;
             this.UploadLabel.TabIndex = 3;
             this.UploadLabel.Text = "Upload Speed";
@@ -886,9 +923,10 @@
             this.DownloadLabel.AutoSize = true;
             this.DownloadLabel.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.DownloadLabel.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.DownloadLabel.Location = new System.Drawing.Point(243, 355);
+            this.DownloadLabel.Location = new System.Drawing.Point(182, 288);
+            this.DownloadLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DownloadLabel.Name = "DownloadLabel";
-            this.DownloadLabel.Size = new System.Drawing.Size(164, 25);
+            this.DownloadLabel.Size = new System.Drawing.Size(155, 25);
             this.DownloadLabel.Style = MetroFramework.MetroColorStyle.Yellow;
             this.DownloadLabel.TabIndex = 3;
             this.DownloadLabel.Text = "Download Speed";
@@ -908,7 +946,8 @@
             this.UploadSpeed.InnerColor = System.Drawing.Color.Transparent;
             this.UploadSpeed.InnerMargin = 2;
             this.UploadSpeed.InnerWidth = -1;
-            this.UploadSpeed.Location = new System.Drawing.Point(570, 20);
+            this.UploadSpeed.Location = new System.Drawing.Point(428, 16);
+            this.UploadSpeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.UploadSpeed.MarqueeAnimationSpeed = 2000;
             this.UploadSpeed.Name = "UploadSpeed";
             this.UploadSpeed.OuterColor = System.Drawing.Color.Gray;
@@ -917,7 +956,7 @@
             this.UploadSpeed.ProgressColor = System.Drawing.Color.Red;
             this.UploadSpeed.ProgressWidth = 25;
             this.UploadSpeed.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.UploadSpeed.Size = new System.Drawing.Size(320, 320);
+            this.UploadSpeed.Size = new System.Drawing.Size(240, 260);
             this.UploadSpeed.StartAngle = 270;
             this.UploadSpeed.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.UploadSpeed.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -943,7 +982,8 @@
             this.DownloadSpeed.InnerColor = System.Drawing.Color.Transparent;
             this.DownloadSpeed.InnerMargin = 2;
             this.DownloadSpeed.InnerWidth = -1;
-            this.DownloadSpeed.Location = new System.Drawing.Point(165, 20);
+            this.DownloadSpeed.Location = new System.Drawing.Point(124, 16);
+            this.DownloadSpeed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DownloadSpeed.MarqueeAnimationSpeed = 2000;
             this.DownloadSpeed.Name = "DownloadSpeed";
             this.DownloadSpeed.OuterColor = System.Drawing.Color.Gray;
@@ -952,7 +992,7 @@
             this.DownloadSpeed.ProgressColor = System.Drawing.Color.Red;
             this.DownloadSpeed.ProgressWidth = 25;
             this.DownloadSpeed.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.DownloadSpeed.Size = new System.Drawing.Size(320, 320);
+            this.DownloadSpeed.Size = new System.Drawing.Size(240, 260);
             this.DownloadSpeed.StartAngle = 270;
             this.DownloadSpeed.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.DownloadSpeed.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
@@ -972,9 +1012,10 @@
             this.StartSpeedTest.BackColor = System.Drawing.Color.Transparent;
             this.StartSpeedTest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.StartSpeedTest.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.GO1;
-            this.StartSpeedTest.Location = new System.Drawing.Point(443, 346);
+            this.StartSpeedTest.Location = new System.Drawing.Point(332, 281);
+            this.StartSpeedTest.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StartSpeedTest.Name = "StartSpeedTest";
-            this.StartSpeedTest.Size = new System.Drawing.Size(216, 157);
+            this.StartSpeedTest.Size = new System.Drawing.Size(162, 128);
             this.StartSpeedTest.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.StartSpeedTest.TabIndex = 4;
             this.StartSpeedTest.TabStop = false;
@@ -986,16 +1027,17 @@
             this.About.Controls.Add(this.UpdateChecker);
             this.About.HorizontalScrollbarBarColor = true;
             this.About.HorizontalScrollbarHighlightOnWheel = false;
-            this.About.HorizontalScrollbarSize = 10;
+            this.About.HorizontalScrollbarSize = 8;
             this.About.Location = new System.Drawing.Point(4, 38);
+            this.About.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.About.Name = "About";
-            this.About.Size = new System.Drawing.Size(1054, 522);
+            this.About.Size = new System.Drawing.Size(788, 416);
             this.About.TabIndex = 2;
             this.About.Text = "About";
             this.About.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.About.VerticalScrollbarBarColor = true;
             this.About.VerticalScrollbarHighlightOnWheel = false;
-            this.About.VerticalScrollbarSize = 10;
+            this.About.VerticalScrollbarSize = 8;
             this.About.Click += new System.EventHandler(this.About_Click);
             // 
             // aboiutinfo
@@ -1007,9 +1049,10 @@
             this.aboiutinfo.BackColor = System.Drawing.Color.Transparent;
             this.aboiutinfo.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.aboiutinfo.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.aboiutinfo.Location = new System.Drawing.Point(-4, 10);
+            this.aboiutinfo.Location = new System.Drawing.Point(-3, 8);
+            this.aboiutinfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.aboiutinfo.Name = "aboiutinfo";
-            this.aboiutinfo.Size = new System.Drawing.Size(816, 425);
+            this.aboiutinfo.Size = new System.Drawing.Size(771, 425);
             this.aboiutinfo.Style = MetroFramework.MetroColorStyle.Red;
             this.aboiutinfo.TabIndex = 2;
             this.aboiutinfo.Text = resources.GetString("aboiutinfo.Text");
@@ -1023,9 +1066,10 @@
             this.UpdateChecker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UpdateChecker.DisplayFocus = true;
             this.UpdateChecker.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.UpdateChecker.Location = new System.Drawing.Point(899, 10);
+            this.UpdateChecker.Location = new System.Drawing.Point(674, 8);
+            this.UpdateChecker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.UpdateChecker.Name = "UpdateChecker";
-            this.UpdateChecker.Size = new System.Drawing.Size(147, 43);
+            this.UpdateChecker.Size = new System.Drawing.Size(110, 35);
             this.UpdateChecker.Style = MetroFramework.MetroColorStyle.Yellow;
             this.UpdateChecker.TabIndex = 3;
             this.UpdateChecker.Text = "Check For Updates";
@@ -1044,17 +1088,18 @@
             this.Settings.ForeColor = System.Drawing.Color.Red;
             this.Settings.HorizontalScrollbarBarColor = true;
             this.Settings.HorizontalScrollbarHighlightOnWheel = false;
-            this.Settings.HorizontalScrollbarSize = 10;
+            this.Settings.HorizontalScrollbarSize = 8;
             this.Settings.Location = new System.Drawing.Point(4, 38);
+            this.Settings.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Settings.Name = "Settings";
-            this.Settings.Size = new System.Drawing.Size(1054, 522);
+            this.Settings.Size = new System.Drawing.Size(788, 416);
             this.Settings.Style = MetroFramework.MetroColorStyle.Yellow;
             this.Settings.TabIndex = 5;
             this.Settings.Text = "Settings";
             this.Settings.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Settings.VerticalScrollbarBarColor = true;
             this.Settings.VerticalScrollbarHighlightOnWheel = false;
-            this.Settings.VerticalScrollbarSize = 10;
+            this.Settings.VerticalScrollbarSize = 8;
             this.Settings.Click += new System.EventHandler(this.Settings_Click);
             // 
             // metroPanel4
@@ -1066,17 +1111,18 @@
             this.metroPanel4.Controls.Add(this.ResizableTitle);
             this.metroPanel4.HorizontalScrollbarBarColor = true;
             this.metroPanel4.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel4.HorizontalScrollbarSize = 10;
-            this.metroPanel4.Location = new System.Drawing.Point(739, 16);
+            this.metroPanel4.HorizontalScrollbarSize = 8;
+            this.metroPanel4.Location = new System.Drawing.Point(554, 13);
+            this.metroPanel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroPanel4.Name = "metroPanel4";
-            this.metroPanel4.Size = new System.Drawing.Size(212, 169);
+            this.metroPanel4.Size = new System.Drawing.Size(160, 138);
             this.metroPanel4.TabIndex = 11;
             this.metroPanel4.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroPanel4.UseCustomBackColor = true;
             this.metroPanel4.UseStyleColors = true;
             this.metroPanel4.VerticalScrollbarBarColor = true;
             this.metroPanel4.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel4.VerticalScrollbarSize = 10;
+            this.metroPanel4.VerticalScrollbarSize = 8;
             // 
             // ResizableToggle
             // 
@@ -1084,9 +1130,10 @@
             this.ResizableToggle.AutoSize = true;
             this.ResizableToggle.Checked = true;
             this.ResizableToggle.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ResizableToggle.Location = new System.Drawing.Point(48, 72);
+            this.ResizableToggle.Location = new System.Drawing.Point(16, 58);
+            this.ResizableToggle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ResizableToggle.Name = "ResizableToggle";
-            this.ResizableToggle.Size = new System.Drawing.Size(80, 21);
+            this.ResizableToggle.Size = new System.Drawing.Size(80, 17);
             this.ResizableToggle.TabIndex = 9;
             this.ResizableToggle.Text = "On";
             this.ResizableToggle.UseSelectable = true;
@@ -1096,9 +1143,10 @@
             this.Resizablelabel.AutoSize = true;
             this.Resizablelabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.Resizablelabel.ForeColor = System.Drawing.Color.Yellow;
-            this.Resizablelabel.Location = new System.Drawing.Point(21, 132);
+            this.Resizablelabel.Location = new System.Drawing.Point(16, 107);
+            this.Resizablelabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Resizablelabel.Name = "Resizablelabel";
-            this.Resizablelabel.Size = new System.Drawing.Size(119, 20);
+            this.Resizablelabel.Size = new System.Drawing.Size(107, 19);
             this.Resizablelabel.Style = MetroFramework.MetroColorStyle.Yellow;
             this.Resizablelabel.TabIndex = 8;
             this.Resizablelabel.Text = "Tool Is Resizable";
@@ -1109,9 +1157,10 @@
             // 
             this.ResizableTitle.AutoSize = true;
             this.ResizableTitle.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.ResizableTitle.Location = new System.Drawing.Point(3, 10);
+            this.ResizableTitle.Location = new System.Drawing.Point(2, 8);
+            this.ResizableTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ResizableTitle.Name = "ResizableTitle";
-            this.ResizableTitle.Size = new System.Drawing.Size(108, 20);
+            this.ResizableTitle.Size = new System.Drawing.Size(105, 19);
             this.ResizableTitle.Style = MetroFramework.MetroColorStyle.Blue;
             this.ResizableTitle.TabIndex = 6;
             this.ResizableTitle.Text = "Tool Resizable";
@@ -1127,27 +1176,29 @@
             this.MouseSensitivity.Controls.Add(this.MouseSpeedLabel);
             this.MouseSensitivity.HorizontalScrollbarBarColor = true;
             this.MouseSensitivity.HorizontalScrollbarHighlightOnWheel = false;
-            this.MouseSensitivity.HorizontalScrollbarSize = 10;
-            this.MouseSensitivity.Location = new System.Drawing.Point(16, 191);
+            this.MouseSensitivity.HorizontalScrollbarSize = 8;
+            this.MouseSensitivity.Location = new System.Drawing.Point(12, 155);
+            this.MouseSensitivity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MouseSensitivity.Name = "MouseSensitivity";
-            this.MouseSensitivity.Size = new System.Drawing.Size(461, 95);
+            this.MouseSensitivity.Size = new System.Drawing.Size(347, 78);
             this.MouseSensitivity.Style = MetroFramework.MetroColorStyle.Red;
             this.MouseSensitivity.TabIndex = 10;
             this.MouseSensitivity.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.MouseSensitivity.UseStyleColors = true;
             this.MouseSensitivity.VerticalScrollbarBarColor = true;
             this.MouseSensitivity.VerticalScrollbarHighlightOnWheel = false;
-            this.MouseSensitivity.VerticalScrollbarSize = 10;
+            this.MouseSensitivity.VerticalScrollbarSize = 8;
             // 
             // metroTrackBar1
             // 
             this.metroTrackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.metroTrackBar1.BackColor = System.Drawing.Color.Transparent;
             this.metroTrackBar1.DisplayFocus = true;
-            this.metroTrackBar1.Location = new System.Drawing.Point(16, 49);
+            this.metroTrackBar1.Location = new System.Drawing.Point(12, 40);
+            this.metroTrackBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroTrackBar1.Minimum = 20;
             this.metroTrackBar1.Name = "metroTrackBar1";
-            this.metroTrackBar1.Size = new System.Drawing.Size(427, 23);
+            this.metroTrackBar1.Size = new System.Drawing.Size(320, 19);
             this.metroTrackBar1.Style = MetroFramework.MetroColorStyle.Lime;
             this.metroTrackBar1.TabIndex = 7;
             this.metroTrackBar1.Text = "metroTrackBar1";
@@ -1159,9 +1210,10 @@
             // 
             this.MouseSpeedLabel.AutoSize = true;
             this.MouseSpeedLabel.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.MouseSpeedLabel.Location = new System.Drawing.Point(16, 10);
+            this.MouseSpeedLabel.Location = new System.Drawing.Point(12, 8);
+            this.MouseSpeedLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MouseSpeedLabel.Name = "MouseSpeedLabel";
-            this.MouseSpeedLabel.Size = new System.Drawing.Size(95, 20);
+            this.MouseSpeedLabel.Size = new System.Drawing.Size(93, 19);
             this.MouseSpeedLabel.Style = MetroFramework.MetroColorStyle.Blue;
             this.MouseSpeedLabel.TabIndex = 6;
             this.MouseSpeedLabel.Text = "App Opacity";
@@ -1184,24 +1236,26 @@
             this.metroPanel5.Controls.Add(this.SoftwareThemes);
             this.metroPanel5.HorizontalScrollbarBarColor = true;
             this.metroPanel5.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel5.HorizontalScrollbarSize = 10;
-            this.metroPanel5.Location = new System.Drawing.Point(501, 16);
+            this.metroPanel5.HorizontalScrollbarSize = 8;
+            this.metroPanel5.Location = new System.Drawing.Point(376, 13);
+            this.metroPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroPanel5.Name = "metroPanel5";
-            this.metroPanel5.Size = new System.Drawing.Size(212, 169);
+            this.metroPanel5.Size = new System.Drawing.Size(160, 138);
             this.metroPanel5.Style = MetroFramework.MetroColorStyle.Yellow;
             this.metroPanel5.TabIndex = 9;
             this.metroPanel5.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroPanel5.VerticalScrollbarBarColor = true;
             this.metroPanel5.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel5.VerticalScrollbarSize = 10;
+            this.metroPanel5.VerticalScrollbarSize = 8;
             // 
             // SetTheme
             // 
             this.SetTheme.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.SetTheme.Highlight = true;
-            this.SetTheme.Location = new System.Drawing.Point(39, 132);
+            this.SetTheme.Location = new System.Drawing.Point(29, 107);
+            this.SetTheme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SetTheme.Name = "SetTheme";
-            this.SetTheme.Size = new System.Drawing.Size(135, 30);
+            this.SetTheme.Size = new System.Drawing.Size(101, 24);
             this.SetTheme.Style = MetroFramework.MetroColorStyle.Yellow;
             this.SetTheme.TabIndex = 14;
             this.SetTheme.Text = "Set App Theme";
@@ -1215,9 +1269,10 @@
             this.pinktheme.AutoSize = true;
             this.pinktheme.DisplayFocus = true;
             this.pinktheme.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.pinktheme.Location = new System.Drawing.Point(107, 96);
+            this.pinktheme.Location = new System.Drawing.Point(80, 78);
+            this.pinktheme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pinktheme.Name = "pinktheme";
-            this.pinktheme.Size = new System.Drawing.Size(52, 20);
+            this.pinktheme.Size = new System.Drawing.Size(51, 19);
             this.pinktheme.Style = MetroFramework.MetroColorStyle.Pink;
             this.pinktheme.TabIndex = 13;
             this.pinktheme.Text = "Pink";
@@ -1230,9 +1285,10 @@
             this.browntheme.AutoSize = true;
             this.browntheme.DisplayFocus = true;
             this.browntheme.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.browntheme.Location = new System.Drawing.Point(107, 73);
+            this.browntheme.Location = new System.Drawing.Point(80, 59);
+            this.browntheme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.browntheme.Name = "browntheme";
-            this.browntheme.Size = new System.Drawing.Size(67, 20);
+            this.browntheme.Size = new System.Drawing.Size(64, 19);
             this.browntheme.Style = MetroFramework.MetroColorStyle.Brown;
             this.browntheme.TabIndex = 12;
             this.browntheme.Text = "Brown";
@@ -1245,9 +1301,10 @@
             this.limetheme.AutoSize = true;
             this.limetheme.DisplayFocus = true;
             this.limetheme.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.limetheme.Location = new System.Drawing.Point(107, 49);
+            this.limetheme.Location = new System.Drawing.Point(80, 40);
+            this.limetheme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.limetheme.Name = "limetheme";
-            this.limetheme.Size = new System.Drawing.Size(57, 20);
+            this.limetheme.Size = new System.Drawing.Size(54, 19);
             this.limetheme.Style = MetroFramework.MetroColorStyle.Lime;
             this.limetheme.TabIndex = 11;
             this.limetheme.Text = "Lime";
@@ -1260,9 +1317,10 @@
             this.orangetheme.AutoSize = true;
             this.orangetheme.DisplayFocus = true;
             this.orangetheme.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.orangetheme.Location = new System.Drawing.Point(11, 97);
+            this.orangetheme.Location = new System.Drawing.Point(8, 79);
+            this.orangetheme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.orangetheme.Name = "orangetheme";
-            this.orangetheme.Size = new System.Drawing.Size(74, 20);
+            this.orangetheme.Size = new System.Drawing.Size(71, 19);
             this.orangetheme.Style = MetroFramework.MetroColorStyle.Orange;
             this.orangetheme.TabIndex = 10;
             this.orangetheme.Text = "Orange";
@@ -1275,9 +1333,10 @@
             this.bluetheme.AutoSize = true;
             this.bluetheme.DisplayFocus = true;
             this.bluetheme.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.bluetheme.Location = new System.Drawing.Point(11, 73);
+            this.bluetheme.Location = new System.Drawing.Point(8, 59);
+            this.bluetheme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bluetheme.Name = "bluetheme";
-            this.bluetheme.Size = new System.Drawing.Size(54, 20);
+            this.bluetheme.Size = new System.Drawing.Size(51, 19);
             this.bluetheme.Style = MetroFramework.MetroColorStyle.Blue;
             this.bluetheme.TabIndex = 9;
             this.bluetheme.Text = "Blue";
@@ -1291,9 +1350,10 @@
             this.redtheme.AutoSize = true;
             this.redtheme.DisplayFocus = true;
             this.redtheme.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.redtheme.Location = new System.Drawing.Point(11, 49);
+            this.redtheme.Location = new System.Drawing.Point(8, 40);
+            this.redtheme.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.redtheme.Name = "redtheme";
-            this.redtheme.Size = new System.Drawing.Size(51, 20);
+            this.redtheme.Size = new System.Drawing.Size(48, 19);
             this.redtheme.Style = MetroFramework.MetroColorStyle.Red;
             this.redtheme.TabIndex = 8;
             this.redtheme.Text = "Red";
@@ -1305,9 +1365,10 @@
             // 
             this.SoftwareThemes.AutoSize = true;
             this.SoftwareThemes.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.SoftwareThemes.Location = new System.Drawing.Point(11, 10);
+            this.SoftwareThemes.Location = new System.Drawing.Point(8, 8);
+            this.SoftwareThemes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SoftwareThemes.Name = "SoftwareThemes";
-            this.SoftwareThemes.Size = new System.Drawing.Size(131, 20);
+            this.SoftwareThemes.Size = new System.Drawing.Size(124, 19);
             this.SoftwareThemes.Style = MetroFramework.MetroColorStyle.Blue;
             this.SoftwareThemes.TabIndex = 6;
             this.SoftwareThemes.Text = "Software Themes";
@@ -1330,25 +1391,27 @@
             this.metroPanel2.Controls.Add(this.TimeColor);
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(265, 16);
+            this.metroPanel2.HorizontalScrollbarSize = 8;
+            this.metroPanel2.Location = new System.Drawing.Point(199, 13);
+            this.metroPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(212, 169);
+            this.metroPanel2.Size = new System.Drawing.Size(160, 138);
             this.metroPanel2.Style = MetroFramework.MetroColorStyle.Yellow;
             this.metroPanel2.TabIndex = 9;
             this.metroPanel2.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroPanel2.VerticalScrollbarBarColor = true;
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 10;
+            this.metroPanel2.VerticalScrollbarSize = 8;
             // 
             // TimePink
             // 
             this.TimePink.AutoSize = true;
             this.TimePink.DisplayFocus = true;
             this.TimePink.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.TimePink.Location = new System.Drawing.Point(107, 96);
+            this.TimePink.Location = new System.Drawing.Point(80, 78);
+            this.TimePink.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TimePink.Name = "TimePink";
-            this.TimePink.Size = new System.Drawing.Size(52, 20);
+            this.TimePink.Size = new System.Drawing.Size(51, 19);
             this.TimePink.Style = MetroFramework.MetroColorStyle.Pink;
             this.TimePink.TabIndex = 13;
             this.TimePink.Text = "Pink";
@@ -1361,9 +1424,10 @@
             this.TimeBrown.AutoSize = true;
             this.TimeBrown.DisplayFocus = true;
             this.TimeBrown.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.TimeBrown.Location = new System.Drawing.Point(107, 73);
+            this.TimeBrown.Location = new System.Drawing.Point(80, 59);
+            this.TimeBrown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TimeBrown.Name = "TimeBrown";
-            this.TimeBrown.Size = new System.Drawing.Size(67, 20);
+            this.TimeBrown.Size = new System.Drawing.Size(64, 19);
             this.TimeBrown.Style = MetroFramework.MetroColorStyle.Brown;
             this.TimeBrown.TabIndex = 12;
             this.TimeBrown.Text = "Brown";
@@ -1376,9 +1440,10 @@
             this.TimeLime.AutoSize = true;
             this.TimeLime.DisplayFocus = true;
             this.TimeLime.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.TimeLime.Location = new System.Drawing.Point(107, 49);
+            this.TimeLime.Location = new System.Drawing.Point(80, 40);
+            this.TimeLime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TimeLime.Name = "TimeLime";
-            this.TimeLime.Size = new System.Drawing.Size(57, 20);
+            this.TimeLime.Size = new System.Drawing.Size(54, 19);
             this.TimeLime.Style = MetroFramework.MetroColorStyle.Lime;
             this.TimeLime.TabIndex = 11;
             this.TimeLime.Text = "Lime";
@@ -1391,9 +1456,10 @@
             this.TimeOrange.AutoSize = true;
             this.TimeOrange.DisplayFocus = true;
             this.TimeOrange.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.TimeOrange.Location = new System.Drawing.Point(11, 97);
+            this.TimeOrange.Location = new System.Drawing.Point(8, 79);
+            this.TimeOrange.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TimeOrange.Name = "TimeOrange";
-            this.TimeOrange.Size = new System.Drawing.Size(74, 20);
+            this.TimeOrange.Size = new System.Drawing.Size(71, 19);
             this.TimeOrange.Style = MetroFramework.MetroColorStyle.Orange;
             this.TimeOrange.TabIndex = 10;
             this.TimeOrange.Text = "Orange";
@@ -1406,9 +1472,10 @@
             this.TimeBlue.AutoSize = true;
             this.TimeBlue.DisplayFocus = true;
             this.TimeBlue.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.TimeBlue.Location = new System.Drawing.Point(11, 73);
+            this.TimeBlue.Location = new System.Drawing.Point(8, 59);
+            this.TimeBlue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TimeBlue.Name = "TimeBlue";
-            this.TimeBlue.Size = new System.Drawing.Size(54, 20);
+            this.TimeBlue.Size = new System.Drawing.Size(51, 19);
             this.TimeBlue.Style = MetroFramework.MetroColorStyle.Blue;
             this.TimeBlue.TabIndex = 9;
             this.TimeBlue.Text = "Blue";
@@ -1422,9 +1489,10 @@
             this.TimeRed.AutoSize = true;
             this.TimeRed.DisplayFocus = true;
             this.TimeRed.FontSize = MetroFramework.MetroCheckBoxSize.Medium;
-            this.TimeRed.Location = new System.Drawing.Point(11, 49);
+            this.TimeRed.Location = new System.Drawing.Point(8, 40);
+            this.TimeRed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TimeRed.Name = "TimeRed";
-            this.TimeRed.Size = new System.Drawing.Size(51, 20);
+            this.TimeRed.Size = new System.Drawing.Size(48, 19);
             this.TimeRed.Style = MetroFramework.MetroColorStyle.Red;
             this.TimeRed.TabIndex = 8;
             this.TimeRed.Text = "Red";
@@ -1438,9 +1506,10 @@
             this.SetTimeColor.DisplayFocus = true;
             this.SetTimeColor.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.SetTimeColor.Highlight = true;
-            this.SetTimeColor.Location = new System.Drawing.Point(29, 132);
+            this.SetTimeColor.Location = new System.Drawing.Point(22, 107);
+            this.SetTimeColor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SetTimeColor.Name = "SetTimeColor";
-            this.SetTimeColor.Size = new System.Drawing.Size(134, 30);
+            this.SetTimeColor.Size = new System.Drawing.Size(100, 24);
             this.SetTimeColor.Style = MetroFramework.MetroColorStyle.Yellow;
             this.SetTimeColor.TabIndex = 7;
             this.SetTimeColor.Text = "Set Time Color";
@@ -1453,9 +1522,10 @@
             // 
             this.TimeColor.AutoSize = true;
             this.TimeColor.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.TimeColor.Location = new System.Drawing.Point(11, 10);
+            this.TimeColor.Location = new System.Drawing.Point(8, 8);
+            this.TimeColor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TimeColor.Name = "TimeColor";
-            this.TimeColor.Size = new System.Drawing.Size(85, 20);
+            this.TimeColor.Size = new System.Drawing.Size(83, 19);
             this.TimeColor.Style = MetroFramework.MetroColorStyle.Blue;
             this.TimeColor.TabIndex = 6;
             this.TimeColor.Text = "Time Color";
@@ -1472,23 +1542,25 @@
             this.metroPanel1.Controls.Add(this.metroLabel1);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(16, 16);
+            this.metroPanel1.HorizontalScrollbarSize = 8;
+            this.metroPanel1.Location = new System.Drawing.Point(12, 13);
+            this.metroPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(226, 169);
+            this.metroPanel1.Size = new System.Drawing.Size(170, 138);
             this.metroPanel1.Style = MetroFramework.MetroColorStyle.Yellow;
             this.metroPanel1.TabIndex = 7;
             this.metroPanel1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel1.VerticalScrollbarSize = 8;
             // 
             // TopAlwaysToggle
             // 
             this.TopAlwaysToggle.AutoSize = true;
-            this.TopAlwaysToggle.Location = new System.Drawing.Point(50, 79);
+            this.TopAlwaysToggle.Location = new System.Drawing.Point(38, 64);
+            this.TopAlwaysToggle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TopAlwaysToggle.Name = "TopAlwaysToggle";
-            this.TopAlwaysToggle.Size = new System.Drawing.Size(80, 21);
+            this.TopAlwaysToggle.Size = new System.Drawing.Size(80, 17);
             this.TopAlwaysToggle.TabIndex = 12;
             this.TopAlwaysToggle.Text = "Off";
             this.TopAlwaysToggle.UseSelectable = true;
@@ -1498,9 +1570,10 @@
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Small;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(3, 10);
+            this.metroLabel1.Location = new System.Drawing.Point(2, 8);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(167, 17);
+            this.metroLabel1.Size = new System.Drawing.Size(150, 15);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Blue;
             this.metroLabel1.TabIndex = 6;
             this.metroLabel1.Text = "Keep Control Panel On Top";
@@ -1512,9 +1585,10 @@
             this.Username.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Username.AutoSize = true;
             this.Username.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.Username.Location = new System.Drawing.Point(778, 640);
+            this.Username.Location = new System.Drawing.Point(584, 520);
+            this.Username.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(74, 20);
+            this.Username.Size = new System.Drawing.Size(67, 19);
             this.Username.Style = MetroFramework.MetroColorStyle.Yellow;
             this.Username.TabIndex = 4;
             this.Username.Text = "Welcome:";
@@ -1575,17 +1649,19 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1076, 668);
+            this.ClientSize = new System.Drawing.Size(807, 543);
             this.Controls.Add(this.TabControl1);
             this.Controls.Add(this.Time);
             this.Controls.Add(this.Username);
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.None;
             this.Text = "Brett Tech Control Panel V3";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
