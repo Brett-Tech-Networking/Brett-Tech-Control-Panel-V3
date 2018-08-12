@@ -17,7 +17,6 @@ C:\Users\Brett Tech\source\repos\Brett Tech Control Panel V3\Brett Tech Control 
 C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\bin\Debug\Brett Tech Control Panel V3.exe.config
 C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\bin\Debug\Brett Tech Control Panel V3.exe
 C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\bin\Debug\Brett Tech Control Panel V3.pdb
-C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\bin\Debug\Fader Theme.dll
 C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\bin\Debug\MetroFramework.Design.dll
 C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\bin\Debug\MetroFramework.dll
 C:\Users\Brett Tech\Documents\GitHub\Brett-Tech-Control-Panel-V3\Brett Tech Control Panel V3\bin\Debug\MetroFramework.Fonts.dll

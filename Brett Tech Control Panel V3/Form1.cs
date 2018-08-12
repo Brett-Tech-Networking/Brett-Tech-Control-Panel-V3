@@ -8,6 +8,7 @@ using System.IO;
 using System.Net;
 using System.Linq;
 using Microsoft.Win32;
+using System.Runtime.InteropServices;
 
 namespace Brett_Tech_Control_Panel_V3
 {
@@ -28,9 +29,9 @@ namespace Brett_Tech_Control_Panel_V3
         private void GetAllProcess()
         {
             procs = Process.GetProcesses();
-          
+
             listBox1.Items.Clear();
-            for (int i = 0; i< procs.Length; i++)
+            for (int i = 0; i < procs.Length; i++)
             {
                 listBox1.Items.Add(procs[i].ProcessName);
             }
@@ -83,9 +84,8 @@ namespace Brett_Tech_Control_Panel_V3
             // Print Username
             Username.Text = "Welcome: " + (System.Environment.UserName);
 
-           
 
-    }
+        }
 
         private void Clock_Tick(object sender, EventArgs e)
         {
@@ -231,7 +231,7 @@ namespace Brett_Tech_Control_Panel_V3
 
         private void Set_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void ShowNotifyIcon(string v1, bool v2, int v3)
@@ -285,8 +285,8 @@ namespace Brett_Tech_Control_Panel_V3
 
         private void KillProcess_Click(object sender, EventArgs e)
         {
-                procs[listBox1.SelectedIndex].Kill();
-                GetAllProcess();
+            procs[listBox1.SelectedIndex].Kill();
+            GetAllProcess();
         }
 
         private void TaskManager_Click(object sender, EventArgs e)
@@ -335,7 +335,7 @@ namespace Brett_Tech_Control_Panel_V3
 
         }
 
-    
+
 
         private void metroTrackBar1_ValueChanged(object sender, EventArgs e)
         {
@@ -388,7 +388,7 @@ namespace Brett_Tech_Control_Panel_V3
                 {
                     richTextBox1.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);
                 }
-               
+
             }
         }
 
@@ -505,15 +505,7 @@ namespace Brett_Tech_Control_Panel_V3
 
         }
 
-        private void StartSpeedTest_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                UploadSpeed.Text = "TEST";
-                DownloadSpeed.Text = "TEST";
-            }
-            catch { MessageBox.Show("Sorry We Can't Process That Right Now", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-        }
+        
 
         private void ToolSize_Tick(object sender, EventArgs e)
         {
@@ -537,7 +529,7 @@ namespace Brett_Tech_Control_Panel_V3
 
         private void WIFISSIDLIST_Tick(object sender, EventArgs e)
         {
-           
+
         }
 
         private void SetTheme_Click(object sender, EventArgs e)
@@ -592,7 +584,36 @@ namespace Brett_Tech_Control_Panel_V3
             {
                 Process.Start("https://github.com/Brett-Tech-Networking/Moradi-Notepad/releases/download/V4/Moradi.Notepad.Advanced.Installer.exe");
             }
-           
+
         }
+
+        private void emptyRecycleBinToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult r;
+            try
+            {
+                r = MessageBox.Show("Are You Sure You Want To Empty The Trash?", "Recycle Bin", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (r == DialogResult.Yes)
+                {
+                    uint ui = SHEmptyRecycleBin(IntPtr.Zero, null, Recyclebin.SHRB_NOCONFIRMATION);
+                    MessageBox.Show("The Trash Has Been Deleted", "Empty Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        // making enum
+        enum Recyclebin : uint
+        {
+            SHRB_NOCONFIRMATION = 0x00000001,
+            SHRB_NOPROGRESSUI = 0x00000002,
+            SHRB_NOSOUND = 0x00000004
+        }
+        [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
+        static extern uint SHEmptyRecycleBin(IntPtr hwn, string root, Recyclebin flages);
+
     }
 }
+
