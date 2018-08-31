@@ -56,6 +56,11 @@
             this.ScanButton = new MetroFramework.Controls.MetroButton();
             this.DriveCombo = new MetroFramework.Controls.MetroComboBox();
             this.metroProgressBar1 = new MetroFramework.Controls.MetroProgressBar();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearBrowserCacheToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearTempFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.emptyRecycleBinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TaskManager = new MetroFramework.Controls.MetroTabPage();
             this.RefreshProcesses = new MetroFramework.Controls.MetroButton();
             this.KillProcess = new MetroFramework.Controls.MetroButton();
@@ -76,7 +81,9 @@
             this.VoiceRecorder = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.SpeedTester = new MetroFramework.Controls.MetroTabPage();
+            this.QuickAccess = new MetroFramework.Controls.MetroTabPage();
+            this.LaunchTool = new MetroFramework.Controls.MetroButton();
+            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
             this.About = new MetroFramework.Controls.MetroTabPage();
             this.aboiutinfo = new MetroFramework.Controls.MetroLabel();
             this.UpdateChecker = new MetroFramework.Controls.MetroButton();
@@ -120,11 +127,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.ToolSize = new System.Windows.Forms.Timer(this.components);
             this.TopAlways = new System.Windows.Forms.Timer(this.components);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearBrowserCacheToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearTempFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.emptyRecycleBinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.QAINFO = new MetroFramework.Controls.MetroLabel();
             this.TabControl1.SuspendLayout();
             this.Main.SuspendLayout();
             this.SystemInfoPanel.SuspendLayout();
@@ -133,12 +136,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.VirusScanner.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.refreshdrives)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.TaskManager.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.TaskManRighClick.SuspendLayout();
             this.Notes.SuspendLayout();
             this.metroPanel3.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.QuickAccess.SuspendLayout();
             this.About.SuspendLayout();
             this.Settings.SuspendLayout();
             this.metroPanel4.SuspendLayout();
@@ -148,7 +153,6 @@
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cpu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ram)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Time
@@ -228,7 +232,7 @@
             this.TabControl1.Controls.Add(this.VirusScanner);
             this.TabControl1.Controls.Add(this.TaskManager);
             this.TabControl1.Controls.Add(this.Notes);
-            this.TabControl1.Controls.Add(this.SpeedTester);
+            this.TabControl1.Controls.Add(this.QuickAccess);
             this.TabControl1.Controls.Add(this.About);
             this.TabControl1.Controls.Add(this.Settings);
             this.TabControl1.Location = new System.Drawing.Point(2, 51);
@@ -576,6 +580,54 @@
             this.metroProgressBar1.TabIndex = 2;
             this.metroProgressBar1.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Black;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(788, 24);
+            this.menuStrip1.TabIndex = 7;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.BackColor = System.Drawing.Color.Black;
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clearBrowserCacheToolStripMenuItem,
+            this.clearTempFilesToolStripMenuItem,
+            this.emptyRecycleBinToolStripMenuItem});
+            this.toolsToolStripMenuItem.ForeColor = System.Drawing.Color.Lime;
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.toolsToolStripMenuItem.Text = "Tools";
+            // 
+            // clearBrowserCacheToolStripMenuItem
+            // 
+            this.clearBrowserCacheToolStripMenuItem.BackColor = System.Drawing.Color.Black;
+            this.clearBrowserCacheToolStripMenuItem.ForeColor = System.Drawing.Color.Lime;
+            this.clearBrowserCacheToolStripMenuItem.Name = "clearBrowserCacheToolStripMenuItem";
+            this.clearBrowserCacheToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.clearBrowserCacheToolStripMenuItem.Text = "Clear Browser Cache";
+            // 
+            // clearTempFilesToolStripMenuItem
+            // 
+            this.clearTempFilesToolStripMenuItem.BackColor = System.Drawing.Color.Black;
+            this.clearTempFilesToolStripMenuItem.ForeColor = System.Drawing.Color.Lime;
+            this.clearTempFilesToolStripMenuItem.Name = "clearTempFilesToolStripMenuItem";
+            this.clearTempFilesToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.clearTempFilesToolStripMenuItem.Text = "Clear Temp Files";
+            // 
+            // emptyRecycleBinToolStripMenuItem
+            // 
+            this.emptyRecycleBinToolStripMenuItem.BackColor = System.Drawing.Color.Black;
+            this.emptyRecycleBinToolStripMenuItem.ForeColor = System.Drawing.Color.Lime;
+            this.emptyRecycleBinToolStripMenuItem.Name = "emptyRecycleBinToolStripMenuItem";
+            this.emptyRecycleBinToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.emptyRecycleBinToolStripMenuItem.Text = "Empty Recycle Bin";
+            this.emptyRecycleBinToolStripMenuItem.Click += new System.EventHandler(this.emptyRecycleBinToolStripMenuItem_Click);
+            // 
             // TaskManager
             // 
             this.TaskManager.Controls.Add(this.RefreshProcesses);
@@ -677,7 +729,7 @@
             this.StartTextBox.MaxLength = 32767;
             this.StartTextBox.Name = "StartTextBox";
             this.StartTextBox.PasswordChar = '\0';
-            //this.StartTextBox.PromptText = "Enter A Program To Start";
+            this.StartTextBox.PromptText = "Enter A Program To Start";
             this.StartTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.StartTextBox.SelectedText = "";
             this.StartTextBox.SelectionLength = 0;
@@ -876,22 +928,60 @@
             this.richTextBox1.Text = "Enter Text Here";
             this.richTextBox1.Click += new System.EventHandler(this.richTextBox1_Click_1);
             // 
-            // SpeedTester
+            // QuickAccess
             // 
-            this.SpeedTester.HorizontalScrollbarBarColor = true;
-            this.SpeedTester.HorizontalScrollbarHighlightOnWheel = false;
-            this.SpeedTester.HorizontalScrollbarSize = 8;
-            this.SpeedTester.Location = new System.Drawing.Point(4, 38);
-            this.SpeedTester.Margin = new System.Windows.Forms.Padding(2);
-            this.SpeedTester.Name = "SpeedTester";
-            this.SpeedTester.Size = new System.Drawing.Size(788, 416);
-            this.SpeedTester.Style = MetroFramework.MetroColorStyle.Yellow;
-            this.SpeedTester.TabIndex = 7;
-            this.SpeedTester.Text = "Speed Tester";
-            this.SpeedTester.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.SpeedTester.VerticalScrollbarBarColor = true;
-            this.SpeedTester.VerticalScrollbarHighlightOnWheel = false;
-            this.SpeedTester.VerticalScrollbarSize = 8;
+            this.QuickAccess.Controls.Add(this.QAINFO);
+            this.QuickAccess.Controls.Add(this.LaunchTool);
+            this.QuickAccess.Controls.Add(this.metroComboBox1);
+            this.QuickAccess.HorizontalScrollbarBarColor = true;
+            this.QuickAccess.HorizontalScrollbarHighlightOnWheel = false;
+            this.QuickAccess.HorizontalScrollbarSize = 8;
+            this.QuickAccess.Location = new System.Drawing.Point(4, 38);
+            this.QuickAccess.Margin = new System.Windows.Forms.Padding(2);
+            this.QuickAccess.Name = "QuickAccess";
+            this.QuickAccess.Size = new System.Drawing.Size(788, 416);
+            this.QuickAccess.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.QuickAccess.TabIndex = 7;
+            this.QuickAccess.Text = "Quick Access";
+            this.QuickAccess.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.QuickAccess.VerticalScrollbarBarColor = true;
+            this.QuickAccess.VerticalScrollbarHighlightOnWheel = false;
+            this.QuickAccess.VerticalScrollbarSize = 8;
+            // 
+            // LaunchTool
+            // 
+            this.LaunchTool.DisplayFocus = true;
+            this.LaunchTool.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.LaunchTool.Highlight = true;
+            this.LaunchTool.Location = new System.Drawing.Point(535, 95);
+            this.LaunchTool.Name = "LaunchTool";
+            this.LaunchTool.Size = new System.Drawing.Size(102, 36);
+            this.LaunchTool.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.LaunchTool.TabIndex = 5;
+            this.LaunchTool.Text = "Launch Tool";
+            this.LaunchTool.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.LaunchTool.UseSelectable = true;
+            this.LaunchTool.UseStyleColors = true;
+            this.LaunchTool.Click += new System.EventHandler(this.LaunchTool_Click);
+            // 
+            // metroComboBox1
+            // 
+            this.metroComboBox1.DisplayFocus = true;
+            this.metroComboBox1.FormattingEnabled = true;
+            this.metroComboBox1.ItemHeight = 23;
+            this.metroComboBox1.Items.AddRange(new object[] {
+            "Advanced User Control",
+            "Disk Manager",
+            "Command Line"});
+            this.metroComboBox1.Location = new System.Drawing.Point(173, 98);
+            this.metroComboBox1.Name = "metroComboBox1";
+            this.metroComboBox1.PromptText = "Please Make A Selection";
+            this.metroComboBox1.Size = new System.Drawing.Size(346, 29);
+            this.metroComboBox1.Style = MetroFramework.MetroColorStyle.Yellow;
+            this.metroComboBox1.TabIndex = 4;
+            this.metroComboBox1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroComboBox1.UseSelectable = true;
+            this.metroComboBox1.UseStyleColors = true;
             // 
             // About
             // 
@@ -1519,53 +1609,26 @@
             this.TopAlways.Interval = 500;
             this.TopAlways.Tick += new System.EventHandler(this.SoftwareTheme_Tick);
             // 
-            // menuStrip1
+            // QAINFO
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Black;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolsToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(788, 24);
-            this.menuStrip1.TabIndex = 7;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // toolsToolStripMenuItem
-            // 
-            this.toolsToolStripMenuItem.BackColor = System.Drawing.Color.Black;
-            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clearBrowserCacheToolStripMenuItem,
-            this.clearTempFilesToolStripMenuItem,
-            this.emptyRecycleBinToolStripMenuItem});
-            this.toolsToolStripMenuItem.ForeColor = System.Drawing.Color.Lime;
-            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
-            this.toolsToolStripMenuItem.Text = "Tools";
-            // 
-            // clearBrowserCacheToolStripMenuItem
-            // 
-            this.clearBrowserCacheToolStripMenuItem.BackColor = System.Drawing.Color.Black;
-            this.clearBrowserCacheToolStripMenuItem.ForeColor = System.Drawing.Color.Lime;
-            this.clearBrowserCacheToolStripMenuItem.Name = "clearBrowserCacheToolStripMenuItem";
-            this.clearBrowserCacheToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.clearBrowserCacheToolStripMenuItem.Text = "Clear Browser Cache";
-            // 
-            // clearTempFilesToolStripMenuItem
-            // 
-            this.clearTempFilesToolStripMenuItem.BackColor = System.Drawing.Color.Black;
-            this.clearTempFilesToolStripMenuItem.ForeColor = System.Drawing.Color.Lime;
-            this.clearTempFilesToolStripMenuItem.Name = "clearTempFilesToolStripMenuItem";
-            this.clearTempFilesToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.clearTempFilesToolStripMenuItem.Text = "Clear Temp Files";
-            // 
-            // emptyRecycleBinToolStripMenuItem
-            // 
-            this.emptyRecycleBinToolStripMenuItem.BackColor = System.Drawing.Color.Black;
-            this.emptyRecycleBinToolStripMenuItem.ForeColor = System.Drawing.Color.Lime;
-            this.emptyRecycleBinToolStripMenuItem.Name = "emptyRecycleBinToolStripMenuItem";
-            this.emptyRecycleBinToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.emptyRecycleBinToolStripMenuItem.Text = "Empty Recycle Bin";
-            this.emptyRecycleBinToolStripMenuItem.Click += new System.EventHandler(this.emptyRecycleBinToolStripMenuItem_Click);
+            this.QAINFO.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.QAINFO.AutoSize = true;
+            this.QAINFO.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.QAINFO.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.QAINFO.Location = new System.Drawing.Point(45, 13);
+            this.QAINFO.Name = "QAINFO";
+            this.QAINFO.Size = new System.Drawing.Size(689, 50);
+            this.QAINFO.Style = MetroFramework.MetroColorStyle.Lime;
+            this.QAINFO.TabIndex = 6;
+            this.QAINFO.Text = "We provide this section so that you can access those hidden or hard to reach tool" +
+    "s \r\nin your computer, please choose from the drop down below to launch an applic" +
+    "ation.";
+            this.QAINFO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.QAINFO.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.QAINFO.UseStyleColors = true;
+            this.QAINFO.WrapToLine = true;
+            this.QAINFO.Click += new System.EventHandler(this.QAINFO_Click);
             // 
             // Form1
             // 
@@ -1598,6 +1661,8 @@
             this.VirusScanner.ResumeLayout(false);
             this.VirusScanner.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.refreshdrives)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.TaskManager.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.TaskManRighClick.ResumeLayout(false);
@@ -1606,6 +1671,8 @@
             this.metroPanel3.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.QuickAccess.ResumeLayout(false);
+            this.QuickAccess.PerformLayout();
             this.About.ResumeLayout(false);
             this.About.PerformLayout();
             this.Settings.ResumeLayout(false);
@@ -1621,8 +1688,6 @@
             this.metroPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cpu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ram)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1698,7 +1763,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ToolStripButton Newfile;
         private System.Windows.Forms.ToolStripButton Information;
-        private MetroFramework.Controls.MetroTabPage SpeedTester;
+        private MetroFramework.Controls.MetroTabPage QuickAccess;
         private MetroFramework.Controls.MetroPanel metroPanel4;
         private MetroFramework.Controls.MetroLabel ResizableTitle;
         private System.Windows.Forms.Timer ToolSize;
@@ -1724,6 +1789,9 @@
         private System.Windows.Forms.ToolStripMenuItem clearBrowserCacheToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearTempFilesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem emptyRecycleBinToolStripMenuItem;
+        private MetroFramework.Controls.MetroButton LaunchTool;
+        private MetroFramework.Controls.MetroComboBox metroComboBox1;
+        private MetroFramework.Controls.MetroLabel QAINFO;
     }
 }
 

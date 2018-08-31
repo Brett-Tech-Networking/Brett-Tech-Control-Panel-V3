@@ -614,6 +614,42 @@ namespace Brett_Tech_Control_Panel_V3
         [DllImport("Shell32.dll", CharSet = CharSet.Unicode)]
         static extern uint SHEmptyRecycleBin(IntPtr hwn, string root, Recyclebin flages);
 
+        private void AdvancedUserControl_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void metroButton1_Click_1(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void LaunchTool_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (metroComboBox1.Text == "Advanced User Control")
+                {
+                    Process.Start("control", "userpasswords2");
+                }
+                else if (metroComboBox1.Text == "Disk Manager")
+                {
+                    Process.Start("diskmgmt.msc");
+                }
+                else if (metroComboBox1.Text == "Command Line")
+                {
+                    Process.Start("cmd");
+                }
+            }
+            catch
+            {
+                //
+            }
+        }
+
+        private void QAINFO_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
