@@ -40,6 +40,8 @@ namespace Brett_Tech_Control_Panel_V3
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+
             // Get All Proccess For Task Manager List
             GetAllProcess();
 
@@ -505,7 +507,7 @@ namespace Brett_Tech_Control_Panel_V3
 
         }
 
-        
+
 
         private void ToolSize_Tick(object sender, EventArgs e)
         {
@@ -620,7 +622,7 @@ namespace Brett_Tech_Control_Panel_V3
 
         private void metroButton1_Click_1(object sender, EventArgs e)
         {
-         
+
         }
 
         private void LaunchTool_Click(object sender, EventArgs e)
@@ -647,6 +649,11 @@ namespace Brett_Tech_Control_Panel_V3
         }
 
         private void QAINFO_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Notepadtextcount_Tick(object sender, EventArgs e)
         {
 
         }

@@ -40,9 +40,10 @@
             this.metroButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroButton1.Highlight = true;
-            this.metroButton1.Location = new System.Drawing.Point(290, 357);
+            this.metroButton1.Location = new System.Drawing.Point(218, 290);
+            this.metroButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(183, 50);
+            this.metroButton1.Size = new System.Drawing.Size(137, 41);
             this.metroButton1.Style = MetroFramework.MetroColorStyle.Yellow;
             this.metroButton1.TabIndex = 0;
             this.metroButton1.Text = "Go To Site";
@@ -55,9 +56,10 @@
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(3, 246);
+            this.metroLabel1.Location = new System.Drawing.Point(0, 200);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(605, 60);
+            this.metroLabel1.Size = new System.Drawing.Size(597, 76);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Red;
             this.metroLabel1.TabIndex = 1;
             this.metroLabel1.Text = resources.GetString("metroLabel1.Text");
@@ -69,27 +71,30 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = global::Brett_Tech_Control_Panel_V3.Properties.Resources.imageedit_3_9181925304;
-            this.pictureBox1.Location = new System.Drawing.Point(178, 50);
+            this.pictureBox1.Location = new System.Drawing.Point(134, 41);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(337, 180);
+            this.pictureBox1.Size = new System.Drawing.Size(253, 146);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // Notepad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(788, 429);
+            this.ClientSize = new System.Drawing.Size(591, 349);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroButton1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "Notepad";
-            this.Padding = new System.Windows.Forms.Padding(0, 60, 0, 0);
+            this.Padding = new System.Windows.Forms.Padding(0, 49, 0, 0);
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.Notepad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

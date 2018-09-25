@@ -82,6 +82,7 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.QuickAccess = new MetroFramework.Controls.MetroTabPage();
+            this.QAINFO = new MetroFramework.Controls.MetroLabel();
             this.LaunchTool = new MetroFramework.Controls.MetroButton();
             this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
             this.About = new MetroFramework.Controls.MetroTabPage();
@@ -127,7 +128,6 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.ToolSize = new System.Windows.Forms.Timer(this.components);
             this.TopAlways = new System.Windows.Forms.Timer(this.components);
-            this.QAINFO = new MetroFramework.Controls.MetroLabel();
             this.TabControl1.SuspendLayout();
             this.Main.SuspendLayout();
             this.SystemInfoPanel.SuspendLayout();
@@ -238,7 +238,7 @@
             this.TabControl1.Location = new System.Drawing.Point(2, 51);
             this.TabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.TabControl1.Name = "TabControl1";
-            this.TabControl1.SelectedIndex = 5;
+            this.TabControl1.SelectedIndex = 4;
             this.TabControl1.Size = new System.Drawing.Size(796, 458);
             this.TabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.TabControl1.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -729,7 +729,7 @@
             this.StartTextBox.MaxLength = 32767;
             this.StartTextBox.Name = "StartTextBox";
             this.StartTextBox.PasswordChar = '\0';
-            this.StartTextBox.PromptText = "Enter A Program To Start";
+            //this.StartTextBox.PromptText = "Enter A Program To Start";
             this.StartTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.StartTextBox.SelectedText = "";
             this.StartTextBox.SelectionLength = 0;
@@ -922,6 +922,7 @@
             this.richTextBox1.ForeColor = System.Drawing.Color.Lime;
             this.richTextBox1.Location = new System.Drawing.Point(2, 33);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.richTextBox1.MaxLength = 10000;
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(779, 366);
             this.richTextBox1.TabIndex = 2;
@@ -947,6 +948,27 @@
             this.QuickAccess.VerticalScrollbarBarColor = true;
             this.QuickAccess.VerticalScrollbarHighlightOnWheel = false;
             this.QuickAccess.VerticalScrollbarSize = 8;
+            // 
+            // QAINFO
+            // 
+            this.QAINFO.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.QAINFO.AutoSize = true;
+            this.QAINFO.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.QAINFO.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.QAINFO.Location = new System.Drawing.Point(45, 13);
+            this.QAINFO.Name = "QAINFO";
+            this.QAINFO.Size = new System.Drawing.Size(689, 50);
+            this.QAINFO.Style = MetroFramework.MetroColorStyle.Lime;
+            this.QAINFO.TabIndex = 6;
+            this.QAINFO.Text = "We provide this section so that you can access those hidden or hard to reach tool" +
+    "s \r\nin your computer, please choose from the drop down below to launch an applic" +
+    "ation.";
+            this.QAINFO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.QAINFO.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.QAINFO.UseStyleColors = true;
+            this.QAINFO.WrapToLine = true;
+            this.QAINFO.Click += new System.EventHandler(this.QAINFO_Click);
             // 
             // LaunchTool
             // 
@@ -1608,27 +1630,6 @@
             this.TopAlways.Enabled = true;
             this.TopAlways.Interval = 500;
             this.TopAlways.Tick += new System.EventHandler(this.SoftwareTheme_Tick);
-            // 
-            // QAINFO
-            // 
-            this.QAINFO.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.QAINFO.AutoSize = true;
-            this.QAINFO.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.QAINFO.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.QAINFO.Location = new System.Drawing.Point(45, 13);
-            this.QAINFO.Name = "QAINFO";
-            this.QAINFO.Size = new System.Drawing.Size(689, 50);
-            this.QAINFO.Style = MetroFramework.MetroColorStyle.Lime;
-            this.QAINFO.TabIndex = 6;
-            this.QAINFO.Text = "We provide this section so that you can access those hidden or hard to reach tool" +
-    "s \r\nin your computer, please choose from the drop down below to launch an applic" +
-    "ation.";
-            this.QAINFO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.QAINFO.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.QAINFO.UseStyleColors = true;
-            this.QAINFO.WrapToLine = true;
-            this.QAINFO.Click += new System.EventHandler(this.QAINFO_Click);
             // 
             // Form1
             // 
