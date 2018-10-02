@@ -9,6 +9,7 @@ using System.Net;
 using System.Linq;
 using Microsoft.Win32;
 using System.Runtime.InteropServices;
+using MetroFramework;
 
 namespace Brett_Tech_Control_Panel_V3
 {
@@ -98,44 +99,6 @@ namespace Brett_Tech_Control_Panel_V3
 
         private void PowerOptions_Tick(object sender, EventArgs e)
         {
-            try
-            {
-#pragma warning disable CS0252 
-                if (PowerComboBox.SelectedItem == "Shutdown")
-#pragma warning restore CS0252 
-                {
-                    Process.Start("Shutdown", "-s -t 30");
-                }
-#pragma warning disable CS0252 
-                if (PowerComboBox.SelectedItem == "Shutdown (abort)")
-#pragma warning restore CS0252 
-                {
-                    Process.Start("Shutdown", "-a");
-
-                }
-#pragma warning disable CS0252 
-                if (PowerComboBox.SelectedItem == "Hibernate")
-#pragma warning restore CS0252 
-                {
-                    Process.Start("Shutdown", "-h");
-                }
-#pragma warning disable CS0252 
-                if (PowerComboBox.SelectedItem == "Restart")
-#pragma warning restore CS0252 
-                {
-                    Process.Start("Shutdown", "-r -t 30");
-                }
-#pragma warning disable CS0252 
-                if (PowerComboBox.SelectedItem == "Logout")
-#pragma warning restore CS0252 
-                {
-                    Process.Start("Shutdown", "-l -t 30");
-                }
-            }
-            catch
-            {
-                MessageBox.Show("oops, seems we cant run that option right now please contact support if issue continues", "oops", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
         private void About_Click(object sender, EventArgs e)
@@ -539,6 +502,8 @@ namespace Brett_Tech_Control_Panel_V3
             if (redtheme.Checked == true)
             {
                 this.BackColor = Color.Red;
+                
+                
             }
         }
 
@@ -657,6 +622,65 @@ namespace Brett_Tech_Control_Panel_V3
         {
 
         }
+
+        private void MaxChars_Tick(object sender, EventArgs e)
+        {
+            if (richTextBox1.TextLength == 10000)
+                metroLabel2.Text = "10,000 Char Max Limit Reached, Download Moradi Notepad For Full Use.";
+            else
+                metroLabel2.Text = "";
+        }
+
+        private void PowerButton_Tick(object sender, EventArgs e)
+        {
+            ExicutePower.Text = PowerComboBox.Text;
+        }
+
+        private void ExicutePower_Click(object sender, EventArgs e)
+        {
+            try
+            {
+#pragma warning disable CS0252 
+                if (PowerComboBox.SelectedItem == "Shutdown")
+#pragma warning restore CS0252 
+                {
+                    Process.Start("Shutdown", "-s -t 30");
+                }
+#pragma warning disable CS0252 
+                if (PowerComboBox.SelectedItem == "Shutdown (abort)")
+#pragma warning restore CS0252 
+                {
+                    Process.Start("Shutdown", "-a");
+
+                }
+#pragma warning disable CS0252 
+                if (PowerComboBox.SelectedItem == "Hibernate")
+#pragma warning restore CS0252 
+                {
+                    Process.Start("Shutdown", "-h");
+                }
+#pragma warning disable CS0252 
+                if (PowerComboBox.SelectedItem == "Restart")
+#pragma warning restore CS0252 
+                {
+                    Process.Start("Shutdown", "-r -t 30");
+                }
+#pragma warning disable CS0252 
+                if (PowerComboBox.SelectedItem == "Logout")
+#pragma warning restore CS0252 
+                {
+                    Process.Start("Shutdown", "-l -t 30");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("oops, seems we cant run that option right now please contact support if issue continues", "oops", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void PowerComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-

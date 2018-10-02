@@ -120,14 +120,17 @@
   <metadata name="Clock.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="PowerOptions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>111, 17</value>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>693, 62</value>
   </metadata>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>693, 62</value>
   </metadata>
   <metadata name="TaskManRighClick.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>689, 19</value>
+  </metadata>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 62</value>
   </metadata>
   <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 62</value>
@@ -159,9 +162,9 @@ Email: Support@Brett-TechRepair.Com
 GitHub: https://github.com/Brett-Tech-Networking
 
 This Version of the control panel will have all my features in one including 
-a mini Virus scanner, a CPU/RAM detector, A Task Manager &amp; More.
+a mini Virus scanner, a CPU/RAM detector, A Task Manager &amp;&amp; More.
 
-On our main screen you may have noticed a YOUR IP: well please note we do not 
+On our main screen you may have noticed YOUR IP: well please note we do not 
 log nor track IP'S this is for your use only, Also if it is not in the format of an IP 10.0.0.1
 Then It may be listing your IPV6 Address witch is a more secure way so hackers are less likely to 
 gain access to you real IP Address
@@ -1016,6 +1019,12 @@ gain access to you real IP Address
   </metadata>
   <metadata name="TopAlways.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>583, 62</value>
+  </metadata>
+  <metadata name="MaxChars.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>808, 62</value>
+  </metadata>
+  <metadata name="PowerButton.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>913, 62</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>110</value>

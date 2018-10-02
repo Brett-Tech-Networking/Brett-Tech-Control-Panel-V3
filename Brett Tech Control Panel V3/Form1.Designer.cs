@@ -34,7 +34,6 @@
             this.Clock = new System.Windows.Forms.Timer(this.components);
             this.PowerComboBox = new MetroFramework.Controls.MetroComboBox();
             this.ShutdownOptionsLabel = new MetroFramework.Controls.MetroLabel();
-            this.PowerOptions = new System.Windows.Forms.Timer(this.components);
             this.TabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.Main = new MetroFramework.Controls.MetroTabPage();
             this.button1 = new System.Windows.Forms.Button();
@@ -128,6 +127,10 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.ToolSize = new System.Windows.Forms.Timer(this.components);
             this.TopAlways = new System.Windows.Forms.Timer(this.components);
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.MaxChars = new System.Windows.Forms.Timer(this.components);
+            this.ExicutePower = new MetroFramework.Controls.MetroButton();
+            this.PowerButton = new System.Windows.Forms.Timer(this.components);
             this.TabControl1.SuspendLayout();
             this.Main.SuspendLayout();
             this.SystemInfoPanel.SuspendLayout();
@@ -199,6 +202,7 @@
             this.PowerComboBox.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.PowerComboBox.UseSelectable = true;
             this.PowerComboBox.UseStyleColors = true;
+            this.PowerComboBox.SelectedIndexChanged += new System.EventHandler(this.PowerComboBox_SelectedIndexChanged);
             // 
             // ShutdownOptionsLabel
             // 
@@ -216,12 +220,6 @@
             this.ShutdownOptionsLabel.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.ShutdownOptionsLabel.UseStyleColors = true;
             // 
-            // PowerOptions
-            // 
-            this.PowerOptions.Enabled = true;
-            this.PowerOptions.Interval = 1000;
-            this.PowerOptions.Tick += new System.EventHandler(this.PowerOptions_Tick);
-            // 
             // TabControl1
             // 
             this.TabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -238,7 +236,7 @@
             this.TabControl1.Location = new System.Drawing.Point(2, 51);
             this.TabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.TabControl1.Name = "TabControl1";
-            this.TabControl1.SelectedIndex = 4;
+            this.TabControl1.SelectedIndex = 7;
             this.TabControl1.Size = new System.Drawing.Size(796, 458);
             this.TabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.TabControl1.Style = MetroFramework.MetroColorStyle.Yellow;
@@ -250,6 +248,7 @@
             // Main
             // 
             this.Main.BackColor = System.Drawing.Color.Transparent;
+            this.Main.Controls.Add(this.ExicutePower);
             this.Main.Controls.Add(this.button1);
             this.Main.Controls.Add(this.SystemInfoPanel);
             this.Main.Controls.Add(this.ShutdownOptionsLabel);
@@ -729,7 +728,7 @@
             this.StartTextBox.MaxLength = 32767;
             this.StartTextBox.Name = "StartTextBox";
             this.StartTextBox.PasswordChar = '\0';
-            //this.StartTextBox.PromptText = "Enter A Program To Start";
+            this.StartTextBox.PromptText = "Enter A Program To Start";
             this.StartTextBox.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.StartTextBox.SelectedText = "";
             this.StartTextBox.SelectionLength = 0;
@@ -811,6 +810,7 @@
             // 
             // metroPanel3
             // 
+            this.metroPanel3.Controls.Add(this.metroLabel2);
             this.metroPanel3.Controls.Add(this.toolStrip1);
             this.metroPanel3.Controls.Add(this.richTextBox1);
             this.metroPanel3.HorizontalScrollbarBarColor = true;
@@ -1008,7 +1008,6 @@
             // About
             // 
             this.About.Controls.Add(this.aboiutinfo);
-            this.About.Controls.Add(this.UpdateChecker);
             this.About.HorizontalScrollbarBarColor = true;
             this.About.HorizontalScrollbarHighlightOnWheel = false;
             this.About.HorizontalScrollbarSize = 8;
@@ -1049,8 +1048,7 @@
             // 
             this.UpdateChecker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.UpdateChecker.DisplayFocus = true;
-            this.UpdateChecker.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.UpdateChecker.Location = new System.Drawing.Point(674, 8);
+            this.UpdateChecker.Location = new System.Drawing.Point(677, 380);
             this.UpdateChecker.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateChecker.Name = "UpdateChecker";
             this.UpdateChecker.Size = new System.Drawing.Size(110, 35);
@@ -1065,6 +1063,7 @@
             // Settings
             // 
             this.Settings.Controls.Add(this.metroPanel4);
+            this.Settings.Controls.Add(this.UpdateChecker);
             this.Settings.Controls.Add(this.MouseSensitivity);
             this.Settings.Controls.Add(this.metroPanel5);
             this.Settings.Controls.Add(this.metroPanel2);
@@ -1242,7 +1241,7 @@
             this.SetTheme.Size = new System.Drawing.Size(101, 24);
             this.SetTheme.Style = MetroFramework.MetroColorStyle.Yellow;
             this.SetTheme.TabIndex = 14;
-            this.SetTheme.Text = "Set App Theme";
+            this.SetTheme.Text = "Set Theme";
             this.SetTheme.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.SetTheme.UseSelectable = true;
             this.SetTheme.UseStyleColors = true;
@@ -1631,6 +1630,42 @@
             this.TopAlways.Interval = 500;
             this.TopAlways.Tick += new System.EventHandler(this.SoftwareTheme_Tick);
             // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel2.Location = new System.Drawing.Point(292, 3);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(0, 0);
+            this.metroLabel2.Style = MetroFramework.MetroColorStyle.Red;
+            this.metroLabel2.TabIndex = 4;
+            this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel2.UseStyleColors = true;
+            // 
+            // MaxChars
+            // 
+            this.MaxChars.Enabled = true;
+            this.MaxChars.Tick += new System.EventHandler(this.MaxChars_Tick);
+            // 
+            // ExicutePower
+            // 
+            this.ExicutePower.Location = new System.Drawing.Point(590, 382);
+            this.ExicutePower.Name = "ExicutePower";
+            this.ExicutePower.Size = new System.Drawing.Size(144, 34);
+            this.ExicutePower.Style = MetroFramework.MetroColorStyle.Lime;
+            this.ExicutePower.TabIndex = 8;
+            this.ExicutePower.Text = "GO";
+            this.ExicutePower.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.ExicutePower.UseSelectable = true;
+            this.ExicutePower.UseStyleColors = true;
+            this.ExicutePower.Click += new System.EventHandler(this.ExicutePower_Click);
+            // 
+            // PowerButton
+            // 
+            this.PowerButton.Enabled = true;
+            this.PowerButton.Tick += new System.EventHandler(this.PowerButton_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1698,7 +1733,6 @@
         private System.Windows.Forms.Timer Clock;
         private MetroFramework.Controls.MetroComboBox PowerComboBox;
         private MetroFramework.Controls.MetroLabel ShutdownOptionsLabel;
-        private System.Windows.Forms.Timer PowerOptions;
         private MetroFramework.Controls.MetroTabControl TabControl1;
         private MetroFramework.Controls.MetroTabPage Main;
         private MetroFramework.Controls.MetroTabPage CPURAM;
@@ -1793,6 +1827,10 @@
         private MetroFramework.Controls.MetroButton LaunchTool;
         private MetroFramework.Controls.MetroComboBox metroComboBox1;
         private MetroFramework.Controls.MetroLabel QAINFO;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private System.Windows.Forms.Timer MaxChars;
+        private MetroFramework.Controls.MetroButton ExicutePower;
+        private System.Windows.Forms.Timer PowerButton;
     }
 }
 
